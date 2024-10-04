@@ -1,0 +1,1018 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\salesinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\salesinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\numbertowords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\numbertowords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\journalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\journalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\migrations\\20241003131846_invoiceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\migrations\\20241003131846_invoiceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\taxservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\taxservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\itax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\itax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\tax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\tax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\taxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\taxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\accountledgercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\accountledgercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\salesdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\salesdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\salesmasterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\salesmasterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\ibrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\ibrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\productgroupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\productgroupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\unitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\unitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\iunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\iunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\unitview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\unitview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\brandview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\brandview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\stockposting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\stockposting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\productview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\productview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\journalmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\journalmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\iinvoicesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\iinvoicesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\invoicesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\invoicesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\journaldetailsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\journaldetailsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\journalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\journalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\journalmasterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\journalmasterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\journaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\journaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\deleteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\deleteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\accounting\\accountledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\accounting\\accountledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\customersupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\customersupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\accountgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\accountgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\accounting\\accountgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\accounting\\accountgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\accountgroupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\accountgroupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\accountledgerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\accountledgerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\accountingbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\accountingbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\accountingbackend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\accountingbackend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\privilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\privilegeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\iprivilege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\iprivilege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\accounting\\ledgerposting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\accounting\\ledgerposting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\viewmodel\\privilegeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\viewmodel\\privilegeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\controllers\\privilegecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\controllers\\privilegecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\authentication\\usermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\authentication\\usermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\migrations\\20241003053913_invoicesettingentityadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\migrations\\20241003053913_invoicesettingentityadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\data\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\data\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\interface\\icompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\interface\\icompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\repository\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\repository\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingbackend\\accountingbackend\\migrations\\20241003014113_companyentityadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8845B26A-000B-4379-95D5-30BB9BB67F43}|AccountingBackend\\AccountingBackend.csproj|solutionrelative:accountingbackend\\migrations\\20241003014113_companyentityadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T05:01:18.923Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Program.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Program.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Program.cs",
+              "RelativeToolTip": "AccountingBackend\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwB0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:48:23.885Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NumberToWords.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\NumberToWords.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\NumberToWords.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\NumberToWords.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\NumberToWords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T10:35:48.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingsController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\SettingsController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\SettingsController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\SettingsController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\SettingsController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T10:34:15.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\InvoiceController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\InvoiceController.cs*",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\InvoiceController.cs*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAjwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:38:47.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\ProductService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\ProductService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\ProductService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAtwFoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:01:01.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalesInvoiceService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\SalesInvoiceService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\SalesInvoiceService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\SalesInvoiceService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\SalesInvoiceService.cs",
+              "ViewState": "AgIAAHQCAAAAAAAAAAAjwJwCAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:41:56.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesMaster.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\SalesMaster.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\SalesMaster.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\SalesMaster.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\SalesMaster.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAywDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:41:10.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JournalController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\JournalController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\JournalController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:54:47.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241003131846_InvoiceEntity.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003131846_InvoiceEntity.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Migrations\\20241003131846_InvoiceEntity.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003131846_InvoiceEntity.cs",
+              "RelativeToolTip": "AccountingBackend\\Migrations\\20241003131846_InvoiceEntity.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T13:18:46.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TaxView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\TaxView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\TaxView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\TaxView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\TaxView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:07:56.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TaxService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\TaxService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\TaxService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\TaxService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\TaxService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:10:19.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITax.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ITax.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\ITax.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ITax.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\ITax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:07:10.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Tax.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Tax.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Tax.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Tax.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Tax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:09:32.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountLedgerController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwCgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:22:15.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SalesDetails.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\SalesDetails.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\SalesDetails.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\SalesDetails.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\SalesDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:43:19.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SalesMasterView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\SalesMasterView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\SalesMasterView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\SalesMasterView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\SalesMasterView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:40:09.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\CategoryService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CategoryService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwDQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:33:58.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductGroup.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ProductGroup.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ProductGroup.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ProductGroup.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ProductGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:32:48.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICategory.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ICategory.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\ICategory.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ICategory.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\ICategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:15:02.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductGroupView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\ProductGroupView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\ProductGroupView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\ProductGroupView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\ProductGroupView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:15:49.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UnitService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UnitService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\UnitService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UnitService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\UnitService.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwEoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:14:00.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IBrand.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IBrand.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\IBrand.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IBrand.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\IBrand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:08:11.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UnitView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\UnitView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\UnitView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\UnitView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\UnitView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:13:14.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUnit.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IUnit.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\IUnit.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IUnit.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\IUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:12:43.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BrandService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\BrandService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\BrandService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\BrandService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\BrandService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:10:19.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BrandView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\BrandView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\BrandView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\BrandView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\BrandView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:09:13.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StockPosting.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\StockPosting.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\StockPosting.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\StockPosting.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\StockPosting.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:06:06.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\ProductView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\ProductView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\ProductView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\ProductView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T06:58:47.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Product.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Product.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Product.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Product.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T06:58:07.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "JournalDetailsView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\JournalDetailsView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\JournalDetailsView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\JournalDetailsView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\JournalDetailsView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:22:50.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InvoiceSetting.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\InvoiceSetting.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\InvoiceSetting.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\InvoiceSetting.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\InvoiceSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:32:25.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IInvoiceSetting.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IInvoiceSetting.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\IInvoiceSetting.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IInvoiceSetting.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\IInvoiceSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:33:08.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Currency.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Currency.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Currency.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Currency.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:37:22.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "JournalMaster.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\JournalMaster.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\JournalMaster.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\JournalMaster.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\JournalMaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:24:20.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20241003053913_InvoiceSettingEntityAdd.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003053913_InvoiceSettingEntityAdd.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Migrations\\20241003053913_InvoiceSettingEntityAdd.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003053913_InvoiceSettingEntityAdd.cs",
+              "RelativeToolTip": "AccountingBackend\\Migrations\\20241003053913_InvoiceSettingEntityAdd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:39:14.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Company.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Company.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Company.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:32:57.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ICompany.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ICompany.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\ICompany.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\ICompany.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\ICompany.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:35:03.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "JournalService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\JournalService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\JournalService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\JournalService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\JournalService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAawFsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:27:40.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "JournalMasterView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\JournalMasterView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\JournalMasterView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\JournalMasterView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\JournalMasterView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:23:21.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CompanyService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\CompanyService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CompanyService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\CompanyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:36:10.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20241003014113_CompanyEntityAdd.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003014113_CompanyEntityAdd.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Migrations\\20241003014113_CompanyEntityAdd.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Migrations\\20241003014113_CompanyEntityAdd.cs",
+              "RelativeToolTip": "AccountingBackend\\Migrations\\20241003014113_CompanyEntityAdd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:41:13.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwC4AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T10:41:34.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "JournalDetails.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\JournalDetails.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\JournalDetails.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\JournalDetails.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\JournalDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:25:22.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DeleteItem.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\DeleteItem.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\DeleteItem.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\DeleteItem.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\DeleteItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T16:26:09.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AccountGroupService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\AccountGroupService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\AccountGroupService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\AccountGroupService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\AccountGroupService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwEwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:25:36.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CustomerSupplierService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CustomerSupplierService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\CustomerSupplierService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\CustomerSupplierService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\CustomerSupplierService.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAAAMkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:09:42.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AccountLedger.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\AccountLedger.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Accounting\\AccountLedger.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\AccountLedger.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Accounting\\AccountLedger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:57:43.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AccountGroup.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\AccountGroup.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Accounting\\AccountGroup.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\AccountGroup.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Accounting\\AccountGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:13:48.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AccountLedgerView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\AccountLedgerView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\AccountLedgerView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\AccountLedgerView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\AccountLedgerView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:57:09.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "AccountingBackend\\appsettings.json",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\appsettings.json",
+              "RelativeToolTip": "AccountingBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-30T20:16:22.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AccountGroupView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\AccountGroupView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\AccountGroupView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\AccountGroupView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\AccountGroupView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:24:17.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AccountingBackend",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\AccountingBackend.csproj",
+              "RelativeDocumentMoniker": "AccountingBackend\\AccountingBackend.csproj",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\AccountingBackend.csproj",
+              "RelativeToolTip": "AccountingBackend\\AccountingBackend.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-01T08:15:03.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AccountingBackend.csproj",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\AccountingBackend.csproj",
+              "RelativeDocumentMoniker": "AccountingBackend\\AccountingBackend.csproj",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\AccountingBackend.csproj",
+              "RelativeToolTip": "AccountingBackend\\AccountingBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-01T08:19:18.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IPrivilege.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IPrivilege.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Interface\\IPrivilege.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Interface\\IPrivilege.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Interface\\IPrivilege.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T04:57:16.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "PrivilegeService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\PrivilegeService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\PrivilegeService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\PrivilegeService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\PrivilegeService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T04:54:51.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "LedgerPosting.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\LedgerPosting.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Accounting\\LedgerPosting.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Accounting\\LedgerPosting.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Accounting\\LedgerPosting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T07:16:21.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\DatabaseConnection.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\DatabaseConnection.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T05:00:43.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PrivilegeView.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\PrivilegeView.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\ViewModel\\PrivilegeView.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\ViewModel\\PrivilegeView.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\ViewModel\\PrivilegeView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T04:58:17.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PrivilegeController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\PrivilegeController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\PrivilegeController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\PrivilegeController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\PrivilegeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T04:52:51.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\UserService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:52:00.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UserMaster.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserMaster.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Authentication\\UserMaster.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserMaster.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Authentication\\UserMaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:26:14.268Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

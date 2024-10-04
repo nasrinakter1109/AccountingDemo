@@ -1,0 +1,52 @@
+
+<div class="card mt-5 m-5">
+
+  <div >
+    <h4 class="card-header text-center">Bank List</h4>  </div>
+
+<div class="card">
+  <div class="card-body">
+
+  <div>
+    <button class="btn btn-success p-2 m-2" (click)="addNew()">Add Bank</button>
+  </div>
+
+
+
+
+  <div class="row">
+      <div class="card ">
+        <div class="card-body p-0">
+          <div class="data-table m-0 p-0">
+            <table class="table text-center mb-0 table-bordered">
+              <thead>
+                <tr>
+
+                  <th style="width:40%">Account Code</th>
+                  <th style="width:40%">Name</th>
+                  <th style="width:10%">Parent Group</th>
+                  <th style="width:10%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listModel; let i = index">
+
+                  <td style="width:40%">{{ item.LedgerCode }}</td>
+                  <td style="width:40%">{{ item.LedgerName }}</td>
+                  <td style="width:10%">{{ item.AccountGroupName }}</td>
+                  <td style="width:10%">
+                    <button class="btn btn-primary btn-sm" (click)="edit(item.LedgerId)">
+                      <span class="fas fa-edit">Edit</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,37 @@
+export class SalesMaster {
+ SalesMasterId : number=0;
+ SerialNo : string='';
+ VoucherNo : string='';
+ WarehouseId : number=0;
+ VoucherTypeId : number=0;
+ Date : any=0;
+ DueDate : any=0;
+ LedgerId : number=0;
+ OrderMasterId : number=0;
+ QuotationMasterId : number=0;
+ Narration : string='';
+ TaxId : number=0;
+ TotalTax : number=0;
+ TaxRate : number=0;
+ Reference : string='';
+ PaymentStatus : string='';
+ DisPer : number=0;
+ BillDiscount : number=0;
+ ShippingAmount : number=0;
+ GrandTotal : number=0;
+ TotalAmount : number=0;
+ NetAmounts : number=0;
+ PayAmount : number=0;
+ BalanceDue : number=0;
+ Status : string='';
+ PreviousDue : number=0;
+ PaymentId : number=0;
+ UserId : string='';
+ POS : boolean=false;
+ FinancialYearId : number=0;
+ CompanyId : number=0;
+ listOrder : any[]=[];
+ listDelete : any[]=[];
+ AddedDate:any;
+ ModifyDate:any;
+}

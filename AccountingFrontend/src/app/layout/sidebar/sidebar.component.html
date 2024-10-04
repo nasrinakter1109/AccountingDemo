@@ -1,0 +1,17 @@
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li *ngFor="let item of menuItems; let i = index" [class.submenu]="item.submenuItems" [class.active]="activeIndex === i">
+      <a (click)="toggleSubmenu(i)" [routerLink]="item.link">
+        <span>{{ item.name }}</span>
+        <span class="menu-arrow" *ngIf="item.submenuItems"></span>
+      </a>
+
+      <!-- Render submenu if it exists -->
+      <ul *ngIf="openSubmenuIndex === i && item.submenuItems">
+        <li *ngFor="let submenuItem of item.submenuItems">
+          <a (click)="setActiveSubmenu(i)" [routerLink]="submenuItem.link">{{ submenuItem.name }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

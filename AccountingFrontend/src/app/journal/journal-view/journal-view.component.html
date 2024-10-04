@@ -1,0 +1,87 @@
+<div class="content">
+  <div class="page-header">
+    <div class="page-title">
+      <h4>Journal Voucher</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="col-md-12 demo-inline-spacing center " style="margin: 0 auto;">
+        <h2 style="font-size: 15px; font-weight: 600;">Journal Voucher Detail: {{ model?.VoucherNo }}</h2>
+        <button class="btn btn-primary float-right mx-1 " (click)="approveJournal()" *ngIf="model?.Status === 'Draft'">Approved</button>
+        <!-- <button [routerLink]="['/journal-edit', model?.JournalMasterId]" *ngIf="model?.Status !== 'Draft'"><img src="assets/img/icons/edit.svg" alt="img" />Edit</button>
+            <button style="cursor: pointer;" (click)="print()" *ngIf="model?.Status !== 'Draft'"><img src="assets/img/icons/printer.svg" alt="img" />Print</button> -->
+    </div>
+      <div class="row">
+      <!-- Printable form content -->
+      <form id="printable-form">
+        <div class="invoice-box table-height">
+          <table cellpadding="0" cellspacing="0" style="width: 100%; line-height: inherit; text-align: left;">
+            <tr class="top">
+              <td colspan="6" style="padding: 5px; vertical-align: top;">
+                <table style="width: 100%; line-height: inherit; text-align: left;">
+                  <tr>
+                    <td style="width: 72%; padding: 5px; vertical-align: top; text-align: left; padding-bottom: 20px;">
+                      <span style="font-size: 16px; color: #7367F0; font-weight: 600;">Company Info</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 400;">{{ company?.CompanyName }}</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 400;">{{ company?.Email }}</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 400;">{{ company?.PhoneNo }}</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 400;">{{ company?.Address }}</span><br />
+                    </td>
+                    <td></td>
+                    <td style="padding: 5px; vertical-align: top; text-align: left; padding-bottom: 20px;">
+                      <span style="font-size: 16px; color: #7367F0; font-weight: 600;">Journal Voucher Details</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 600;">Voucher No: {{ model?.VoucherNo }}</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 600;">Date: {{ model?.Date }}</span><br />
+                      <span style="font-size: 15px; color: #000; font-weight: 600;">Status: {{ model?.Status }}</span><br />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <table class="table" style="width: 100%;">
+            <tr class="heading" style="background: #F3F2F7;">
+              <td style="padding: 5px;">Account</td>
+              <td style="padding: 5px;">Debit</td>
+              <td style="padding: 5px;">Credit</td>
+              <td style="padding: 5px;">Narration</td>
+            </tr>
+            <tr *ngFor="let item of listJournalDetails" class="details" style="border-bottom: 1px solid #E9ECEF;">
+              <td style="width: 260px; padding: 10px;">{{ item?.LedgerName }}</td>
+              <td style="padding: 10px;">{{ item?.Debit  }}</td>
+              <td style="padding: 10px;">{{ item?.Credit  }}</td>
+              <td style="padding: 10px;">{{ item?.Narration }}</td>
+            </tr>
+          </table>
+
+          <tfoot>
+            <tr class="total-order w-100 max-widthauto m-auto mb-4">
+              <td>Total</td>
+              <td>{{ model?.Amount  }}</td>
+            </tr>
+          </tfoot>
+        </div>
+
+        <div class="row">
+          <table style="width: 100%;">
+            <tr>
+              <td><strong>Narration:</strong><br /> {{ model?.Narration }}</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10"><h5 class="custom-heading">Created by: {{ model?.Date | date:'yyyy/mm/dd' }}</h5></div>
+          <div class="col-lg-2" style="float: right;">
+            <h3 class="custom-heading">Approved by:</h3>
+            <h2>{{ model?.Status === 'Draft' ? 'Not Approved' : model?.UserId }}</h2>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<app-approve-dialog *ngIf="approveDialogOpen" (close)="onApproveDialogClose($event)"></app-approve-dialog>

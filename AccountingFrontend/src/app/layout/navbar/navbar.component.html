@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <a  class="logo">
+      <img  alt="Logo">
+    </a>
+    <a id="toggle_btn" (click)="toggleSidebar()"></a>
+  </div>
+
+  <ul class="nav user-menu">
+    <!-- Notifications -->
+    <li class="nav-item dropdown">
+      <!-- Your notification logic -->
+    </li>
+
+    <!-- User profile -->
+    <li class="nav-item dropdown has-arrow">
+      <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-toggle="dropdown">
+        <span class="user-img">
+          <img  alt="User">
+          <span class="status online"></span>
+        </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="">My Profile</a>
+        <a class="dropdown-item" href="">Settings</a>
+        <a class="dropdown-item" (click)="logout()">Logout</a>
+      </div>
+    </li>
+  </ul>
+</nav>

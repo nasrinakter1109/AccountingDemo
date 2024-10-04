@@ -1,0 +1,48 @@
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #02335c;
+  color: white;
+  padding: 20px;
+  height: 100%; /* Take full height of the container, not the entire viewport */
+  flex-shrink: 0; /* Ensure sidebar does not shrink */
+}
+
+.sidebar-menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li a img {
+  margin-right: 10px;
+}
+
+ul.sidebar-menu li.submenu ul {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+ul.sidebar-menu li.submenu ul.open {
+  display: block;
+}
+ul.sidebar-menu li.submenu ul {
+  display: none; /* Hide submenu by default */
+  transition: height 0.3s ease; /* Add transition for height */
+  overflow: hidden; /* Prevent overflow during transition */
+}
+
+ul.sidebar-menu li.submenu ul.open {
+  display: block; /* Show submenu when open */
+}
+ul.sidebar-menu li.active a {
+  background-color: #0056b3; /* Change to your desired active background color */
+  color: white; /* Change to your desired active text color */
+}
+
+

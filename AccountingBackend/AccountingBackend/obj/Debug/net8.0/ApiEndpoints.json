@@ -1,0 +1,580 @@
+[
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "GetAll",
+    "RelativePath": "api/AccountLedger",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "Create",
+    "RelativePath": "api/AccountLedger",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountLedger",
+        "Type": "AccountingBackend.Data.Accounting.AccountLedger",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "GetById",
+    "RelativePath": "api/AccountLedger/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "Update",
+    "RelativePath": "api/AccountLedger/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountLedger",
+        "Type": "AccountingBackend.Data.Accounting.AccountLedger",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "Delete",
+    "RelativePath": "api/AccountLedger/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "GetAllAccountGroup",
+    "RelativePath": "api/AccountLedger/AccountGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "GetAll",
+    "RelativePath": "api/AccountLedger/All/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.AccountLedgerController",
+    "Method": "GetLedgerCode",
+    "RelativePath": "api/AccountLedger/LedgerCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "GetAll",
+    "RelativePath": "api/Invoice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "SaveInvoice",
+    "RelativePath": "api/Invoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "master",
+        "Type": "AccountingBackend.Data.SalesMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "GetbyId",
+    "RelativePath": "api/Invoice/{SalesMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SalesMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "ApprovedOk",
+    "RelativePath": "api/Invoice/Approved",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "master",
+        "Type": "AccountingBackend.Data.SalesMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "GetSalesInvoiceDetailsView",
+    "RelativePath": "api/Invoice/SalesInvoiceDetailsView/{SalesMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SalesMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "GetSalesInvoiceMasterView",
+    "RelativePath": "api/Invoice/SalesInvoiceMasterView/{SalesMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SalesMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "SalesInvoiceSearch",
+    "RelativePath": "api/Invoice/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "voucherNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ledgerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.InvoiceController",
+    "Method": "GetSerialNo",
+    "RelativePath": "api/Invoice/SerialNo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "GetAll",
+    "RelativePath": "api/Journal",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "Create",
+    "RelativePath": "api/Journal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "master",
+        "Type": "AccountingBackend.Data.JournalMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "GetbyId",
+    "RelativePath": "api/Journal/{journalMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "journalMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "ApprovedOk",
+    "RelativePath": "api/Journal/Approved",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "master",
+        "Type": "AccountingBackend.Data.JournalMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "GetCheckLedgerBalance",
+    "RelativePath": "api/Journal/CheckLedgerBalance/{ledgerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ledgerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "JournalDetailsView",
+    "RelativePath": "api/Journal/DetailsView/{journalMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "journalMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "JournalMasterView",
+    "RelativePath": "api/Journal/MasterView/{journalMasterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "journalMasterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.JournalController",
+    "Method": "GetSerialNo",
+    "RelativePath": "api/Journal/SerialNo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.PrivilegeController",
+    "Method": "SavePrivilege",
+    "RelativePath": "api/Privilege",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AccountingBackend.Data.Authentication.Privilege",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.PrivilegeController",
+    "Method": "GetPrivilegesByRoleId",
+    "RelativePath": "api/Privilege/{roleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.PrivilegeController",
+    "Method": "DeletePrivilege",
+    "RelativePath": "api/Privilege/{roleId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.PrivilegeController",
+    "Method": "PrivilegeCheck",
+    "RelativePath": "api/Privilege/privilege-check",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.SettingsController",
+    "Method": "GetConvertAmount",
+    "RelativePath": "api/Settings/ConvertAmount/{amount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "amount",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.SettingsController",
+    "Method": "GetInvoiceSettingById",
+    "RelativePath": "api/Settings/InvoiceSetting/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.SettingsController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/Settings/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.SettingsController",
+    "Method": "GetTaxById",
+    "RelativePath": "api/Settings/Tax/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.UserController",
+    "Method": "SaveOrUpdateUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userMaster",
+        "Type": "AccountingBackend.Data.Authentication.UserMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.UserController",
+    "Method": "GetCompanyDetailsById",
+    "RelativePath": "api/User/Company/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.UserController",
+    "Method": "GetRoles",
+    "RelativePath": "api/User/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AccountingBackend.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AccountingBackend.WeatherForecast, AccountingBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
