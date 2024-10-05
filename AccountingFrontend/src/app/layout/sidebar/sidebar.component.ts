@@ -64,6 +64,12 @@ export class SidebarComponent {
         { name: 'Purchase Return Invoice', link: '/purchaseReturnInvoice-list' },
       ]
     },
+    {
+      name: 'Reports',
+      submenuItems: [
+        { name: 'Financial Report', link: '/finalcialrpt' },
+      ]
+    },
   ];
 
   // Method to toggle submenu and set active index

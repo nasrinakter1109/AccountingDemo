@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\",
+  "WorkspaceRootPath": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|c:\\users\\sheikh\\desktop\\saiful\\d-drivefolder\\worldsolutionlimitedaccountingprojecttask\\accountingreportwebapi\\accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\reports\\financialreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\reports\\financialreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|c:\\users\\sheikh\\desktop\\saiful\\d-drivefolder\\worldsolutionlimitedaccountingprojecttask\\accountingreportwebapi\\accountingreportwebapi\\models\\financialreportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\models\\financialreportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\demoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\demoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|c:\\users\\sheikh\\desktop\\saiful\\d-drivefolder\\worldsolutionlimitedaccountingprojecttask\\accountingreportwebapi\\accountingreportwebapi\\financialreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\financialreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,46 +41,135 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 657,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReportsController.cs",
-              "DocumentMoniker": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
-              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
-              "ToolTip": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
-              "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswC8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:26:02.466Z",
+              "Title": "FinancialReport.rpt",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
+              "RelativeToolTip": "AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-10-05T12:16:04.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FinancialReportModel.cs",
-              "DocumentMoniker": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\Models\\FinancialReportModel.cs",
-              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Models\\FinancialReportModel.cs",
-              "ToolTip": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\Models\\FinancialReportModel.cs",
-              "RelativeToolTip": "AccountingReportWebAPI\\Models\\FinancialReportModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:23:10.116Z",
+              "WhenOpened": "2024-10-05T12:12:37.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FinancialReport1.rpt",
-              "DocumentMoniker": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\FinancialReport1.rpt",
-              "RelativeDocumentMoniker": "AccountingReportWebAPI\\FinancialReport1.rpt",
-              "ToolTip": "C:\\Users\\sheikh\\Desktop\\saiful\\D-DriveFolder\\WorldSolutionLimitedAccountingProjectTask\\AccountingReportWebAPI\\AccountingReportWebAPI\\FinancialReport1.rpt",
-              "RelativeToolTip": "AccountingReportWebAPI\\FinancialReport1.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-10-04T21:00:39.254Z",
+              "Title": "DemoReportController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\DemoReportController.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\DemoReportController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\DemoReportController.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\DemoReportController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwCQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T10:44:19.745Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\ValuesController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\ValuesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T09:23:31.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T09:23:29.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\Models\\Company.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Models\\Company.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\Models\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T07:48:46.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\packages.config",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\packages.config",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\packages.config",
+              "RelativeToolTip": "AccountingReportWebAPI\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-04T23:00:05.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "AccountingReportWebAPI\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "AccountingReportWebAPI\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T23:04:16.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 190,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 186,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
             }
           ]
         }

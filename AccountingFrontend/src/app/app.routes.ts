@@ -23,6 +23,7 @@ import { SalesInvoiceComponent } from './invoice/sales-invoice/sales-invoice.com
 import { SalesInvoiceListComponent } from './invoice/sales-invoice-list/sales-invoice-list.component';
 import { SalesInvoiceEditComponent } from './invoice/sales-invoice-edit/sales-invoice-edit.component';
 import { SalesInvoiceViewComponent } from './invoice/sales-invoice-view/sales-invoice-view.component';
+import { FinancialReportComponent } from './accountReport/financial-report/financial-report.component';
 
 
 export const routes: Routes = [
@@ -52,6 +53,8 @@ export const routes: Routes = [
         { path: 'salesInvoice-list', component: SalesInvoiceListComponent },
         { path: 'salesInvoice-edit/:id', component: SalesInvoiceEditComponent },
         { path: 'salesInvoice/view/:id', component: SalesInvoiceViewComponent },
+        { path: 'finalcialrpt', component: FinancialReportComponent },
+
       ]
     },
 ];

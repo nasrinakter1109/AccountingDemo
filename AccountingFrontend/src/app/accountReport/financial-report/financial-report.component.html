@@ -1,0 +1,14 @@
+<div class="financial-report">
+  <h2>Financial Report</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="toDate">To Date:</label>
+      <input type="date" id="toDate" [(ngModel)]="toDate" name="toDate" required />
+    </div>
+    <div>
+      <label for="companyId">Company ID:</label>
+      <input type="number" id="companyId" [(ngModel)]="companyId" name="companyId" required />
+    </div>
+    <button type="submit">Get Financial Report</button>
+  </form>
+</div>

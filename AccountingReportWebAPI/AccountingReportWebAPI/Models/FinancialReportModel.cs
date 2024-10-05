@@ -7,8 +7,8 @@ namespace AccountingReportWebAPI
 {
     public class FinancialReportModel
     {
-       public DateTime Date {  get; set; }
-        public string AccountName { get; set; }
-        public decimal Amount { get; set; }
+       public string Name {  get; set; }
+        public int Id { get; set; }
+        public decimal Balance { get; set; }
     }
 }
