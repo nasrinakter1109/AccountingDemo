@@ -35,7 +35,7 @@ namespace AccountingBackend.Controllers
             }
             var company =await _company.GetbyId(1);
             var token = GenerateJwtToken(company, isValid);
-            return Ok(new {staus=true,result= token });
+            return Ok(new {status=true,result= token });
          
         }
         private UserAccount IsValidUser(LoginModel login)

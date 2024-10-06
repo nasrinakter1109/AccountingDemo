@@ -12,11 +12,13 @@ export class NavbarComponent {
   hideLabel = false;
   userData:any;
   constructor(private authService: AuthService) {
-    //this.userData = this.authService.getUserData();
-
+    this.userData = this.authService.getUserData();
+    console.log({user1:this.userData})
   }
   toggleSidebar() {
     this.hideLabel = !this.hideLabel;
   }
-  logout(){}
+  logout(){
+    this.authService.logout();
+  }
 }

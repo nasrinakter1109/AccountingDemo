@@ -62,12 +62,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -79,33 +75,59 @@
               "ViewState": "AgIAABIAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T04:43:07.432Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserAccountService.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserAccountService.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\UserAccountService.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserAccountService.cs",
-              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\UserAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AccountLedgerController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowJgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:30:34.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T06:26:41.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserAccount.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserAccount.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Authentication\\UserAccount.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserAccount.cs",
-              "RelativeToolTip": "AccountingBackend\\Data\\Authentication\\UserAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "JournalController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\JournalController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\JournalController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:25:23.314Z",
+              "WhenOpened": "2024-10-06T06:26:31.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\LoginModel.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\LoginModel.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\LoginModel.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T06:07:54.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\LoginController.cs*",
+              "RelativeToolTip": "AccountingBackend\\Controllers\\LoginController.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T06:07:07.288Z",
               "EditorCaption": ""
             },
             {
@@ -118,60 +140,31 @@
               "RelativeToolTip": "AccountingBackend\\Data\\Authentication\\UserMaster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:29:50.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T06:29:50.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountLedgerController.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\AccountLedgerController.cs",
-              "RelativeToolTip": "AccountingBackend\\Controllers\\AccountLedgerController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowJgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserAccount.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Data\\Authentication\\UserAccount.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\Authentication\\UserAccount.cs",
+              "RelativeToolTip": "AccountingBackend\\Data\\Authentication\\UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:26:41.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T06:25:23.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "JournalController.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\JournalController.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\JournalController.cs",
-              "RelativeToolTip": "AccountingBackend\\Controllers\\JournalController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserAccountService.cs",
+              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserAccountService.cs",
+              "RelativeDocumentMoniker": "AccountingBackend\\Repository\\Services\\UserAccountService.cs",
+              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Repository\\Services\\UserAccountService.cs",
+              "RelativeToolTip": "AccountingBackend\\Repository\\Services\\UserAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:26:31.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\LoginModel.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Data\\LoginModel.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Data\\LoginModel.cs",
-              "RelativeToolTip": "AccountingBackend\\Data\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:07:54.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "AccountingBackend\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingBackend\\AccountingBackend\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "AccountingBackend\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:07:07.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T06:30:34.425Z"
             },
             {
               "$type": "Document",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "AccountingBackend\\Controllers\\UserController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAA5wDYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T05:40:59.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T05:40:59.149Z"
             },
             {
               "$type": "Document",
@@ -196,8 +188,7 @@
               "RelativeToolTip": "AccountingBackend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T04:43:43.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T04:43:43.174Z"
             },
             {
               "$type": "Document",
@@ -209,8 +200,7 @@
               "RelativeToolTip": "AccountingBackend\\Controllers\\SettingsController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T06:27:31.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T06:27:31.121Z"
             },
             {
               "$type": "Document",
@@ -222,8 +212,7 @@
               "RelativeToolTip": "AccountingBackend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T04:43:24.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T04:43:24.754Z"
             },
             {
               "$type": "Document",
@@ -235,8 +224,7 @@
               "RelativeToolTip": "AccountingBackend\\AccountingBackend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-06T04:38:56.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T04:38:56.757Z"
             }
           ]
         },

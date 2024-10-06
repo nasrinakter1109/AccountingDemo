@@ -24,13 +24,17 @@ import { SalesInvoiceListComponent } from './invoice/sales-invoice-list/sales-in
 import { SalesInvoiceEditComponent } from './invoice/sales-invoice-edit/sales-invoice-edit.component';
 import { SalesInvoiceViewComponent } from './invoice/sales-invoice-view/sales-invoice-view.component';
 import { FinancialReportComponent } from './accountReport/financial-report/financial-report.component';
+import { LoginComponent } from './user/login/login.component';
 
 
 export const routes: Routes = [
-    {  path: '',
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+
+    {  path: 'account',
       component: MainLayoutComponent,
       children: [
-        { path: '', component: DashboardComponent },
+        { path: 'dashboard', component: DashboardComponent },
         { path: 'user', component: UserComponent },
         { path: 'role-permission', component: RolePermissionComponent },
         { path: 'account-list', component: AccountChartComponent },

@@ -15,6 +15,7 @@ import { jwtDecode } from 'jwt-decode';
 export class LoginComponent {
   loginForm: FormGroup=new FormGroup({});
   errorMessage: string = '';
+  isProcessing = false;
   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {  }
 
   ngOnInit(): void {
@@ -24,7 +25,7 @@ export class LoginComponent {
   createForm(): void {
     this.loginForm = this.fb.group({
       Email: ['', [Validators.required, Validators.email]],
-      Password: ['', Validators.required]
+      Password: ['', [Validators.required,Validators.minLength(6)]]
     });
   }
   onLogin(): void {
@@ -33,22 +34,14 @@ export class LoginComponent {
     }
 
     const loginData = this.loginForm.value;
-
+    this.isProcessing = true;
     this.authService.login(loginData).subscribe(
       (response) => {
+        console.log({response})
         if (response.status) {
           const token = response.result;
-
-          const decodedToken: any = jwtDecode(token);
-            console.log({response,decodedToken})
-          this.authService.setUserData({
-            companyName: decodedToken.CompanyName,
-            roleName: decodedToken.RoleName,
-            roleId: decodedToken.RoleId,
-            userName: decodedToken.UserName,
-            companyId: decodedToken.CompanyId
-          });
-          this.router.navigate(['/dashboard']);
+          this.authService.setUserData(token);
+          this.router.navigate(['/account/dashboard']);
         } else {
           this.errorMessage = response.message;
         }

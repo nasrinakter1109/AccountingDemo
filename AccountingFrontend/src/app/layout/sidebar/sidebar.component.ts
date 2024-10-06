@@ -37,37 +37,37 @@ export class SidebarComponent {
 
   // Define your menu items with submenus
   menuItems = [
-    { name: 'Dashboard', link: '/' },
+    { name: 'Dashboard', link: '/account/dashboard' },
     {
       name: 'Settings',
       submenuItems: [
-        { name: 'User', link: '/user' },
-        { name: 'RolePermission', link: '/role-permission' },
+        { name: 'User', link: '/account/user' },
+        { name: 'RolePermission', link: '/account/role-permission' },
       ]
     },
     {
       name: 'Accounting',
       submenuItems: [
-        { name: 'Account/Ledger', link: '/account-list' },
-        { name: 'Supplier', link: '/supplier-list' },
-        { name: 'Customer', link: '/customer-list' },
-        { name: 'Bank', link: '/bank-list' },
-        { name: 'Journal', link: '/journal-list' },
+        { name: 'Account/Ledger', link: '/account/account-list' },
+        { name: 'Supplier', link: '/account/supplier-list' },
+        { name: 'Customer', link: '/account/customer-list' },
+        { name: 'Bank', link: '/account/bank-list' },
+        { name: 'Journal', link: '/account/journal-list' },
       ]
     },
     {
       name: 'Invoice',
       submenuItems: [
-        { name: 'Sales Invoice', link: '/salesInvoice-list' },
-        { name: 'Purcash Invoice', link: '/purchaseInvoice-list' },
-        { name: 'Sales Return Invoice', link: '/salesReturnInvoice-list' },
-        { name: 'Purchase Return Invoice', link: '/purchaseReturnInvoice-list' },
+        { name: 'Sales Invoice', link: '/account/salesInvoice-list' },
+        { name: 'Purcash Invoice', link: '/account/purchaseInvoice-list' },
+        { name: 'Sales Return Invoice', link: '/account/salesReturnInvoice-list' },
+        { name: 'Purchase Return Invoice', link: '/account/purchaseReturnInvoice-list' },
       ]
     },
     {
       name: 'Reports',
       submenuItems: [
-        { name: 'Financial Report', link: '/finalcialrpt' },
+        { name: 'Financial Report', link: '/account/finalcialrpt' },
       ]
     },
   ];

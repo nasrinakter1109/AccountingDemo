@@ -1,17 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable,PLATFORM_ID } from '@angular/core';
 import { AppConfig } from '../app.config';
 import { HttpClient } from '@angular/common/http';
 import {  Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import { jwtDecode } from 'jwt-decode';
+import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private userData: any = null;
+  private tokenKey = 'authToken';
+  private userDataKey = 'userData';
   private apiUrl = AppConfig.apiUrl ;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router,@Inject(PLATFORM_ID) private platformId: Object) { }
   login(loginData: any): Observable<any> {
     const url = `${this.apiUrl}/login`; // API login endpoint
     return this.http.post(url, loginData).pipe(
@@ -26,20 +29,43 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    return !!localStorage.getItem('token');
+    const token = sessionStorage.getItem(this.tokenKey);
+    return token !== null;
+  }
+  setUserData(token: string) {
+    if (isPlatformBrowser(this.platformId)) {
+      const decodedToken: any = jwtDecode(token);
+      sessionStorage.setItem(this.tokenKey, token);
+      sessionStorage.setItem(this.userDataKey, JSON.stringify({
+        CompanyName: decodedToken.CompanyName,
+        RoleName: decodedToken.RoleName,
+        RoleId: decodedToken.RoleId,
+        UserName: decodedToken.UserName,
+        CompanyId: decodedToken.CompanyId
+      }));
+    }
   }
 
-  setUserData(data: any): void {
-    this.userData = data;
+  getToken(): string | null {
+    if (isPlatformBrowser(this.platformId)) {
+      return sessionStorage.getItem(this.tokenKey);
+    }
+    return null;
   }
-
-
   getUserData(): any {
-    return this.userData;
+    if (isPlatformBrowser(this.platformId)) {
+      const userData = sessionStorage.getItem(this.userDataKey);
+      return userData ? JSON.parse(userData) : null;
+    }
+    return null;
   }
 
-  clearUserData(): void {
-    this.userData = null;
+  logout() {
+    if (isPlatformBrowser(this.platformId)) {
+      sessionStorage.removeItem(this.tokenKey);
+      sessionStorage.removeItem(this.userDataKey);
+    }
+    this.router.navigate(['/login']);
   }
 
 
