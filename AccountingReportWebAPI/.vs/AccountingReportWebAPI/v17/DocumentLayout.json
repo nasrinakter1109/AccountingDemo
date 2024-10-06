@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\reports\\financialreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\reports\\financialreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\demoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\controllers\\demoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\demoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|d:\\nasrinsoftwareworkon\\interviewproject\\solutionworldlimited\\accountingdemo\\accountingreportwebapi\\accountingreportwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\accountingreportwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE870E73-C30E-4A1C-A8F5-574CCAE47A3C}|AccountingReportWebAPI\\AccountingReportWebAPI.csproj|solutionrelative:accountingreportwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 657,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,25 +50,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FinancialReport.rpt",
               "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
               "RelativeDocumentMoniker": "AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
               "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
               "RelativeToolTip": "AccountingReportWebAPI\\Reports\\FinancialReport.rpt",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-10-05T12:16:04.084Z",
+              "WhenOpened": "2024-10-05T15:55:25.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
               "ToolTip": "D:\\NasrinSoftwareWorkOn\\InterviewProject\\SolutionWorldLimited\\AccountingDemo\\AccountingReportWebAPI\\AccountingReportWebAPI\\Controllers\\ReportsController.cs",
               "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBgAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA2wBYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T12:12:37.88Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\DemoReportController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAgwCQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:44:19.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T10:44:19.745Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\ValuesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T09:23:31.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T09:23:31.605Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "AccountingReportWebAPI\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T09:23:29.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T09:23:29.035Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "AccountingReportWebAPI\\Models\\Company.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T07:48:46.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T07:48:46.62Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "AccountingReportWebAPI\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-04T23:00:05.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T23:00:05.681Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,17 @@
               "RelativeToolTip": "AccountingReportWebAPI\\App_Start\\WebApiConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T23:04:16.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T23:04:16.749Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 294,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
             }
           ]
         },
@@ -160,16 +164,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 186,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
             }
           ]
         }

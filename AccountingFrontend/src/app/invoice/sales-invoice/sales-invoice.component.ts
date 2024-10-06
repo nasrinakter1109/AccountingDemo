@@ -9,6 +9,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { SalesMaster } from '../../models/sales-master';
 import { SalesDetails } from '../../models/sales-details';
 import { catchError, of, retry } from 'rxjs';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-sales-invoice',
@@ -23,8 +24,10 @@ export class SalesInvoiceComponent implements OnInit {
   // Mock data
   listLedger :any[]=[];
   listProduct:any = [];
+  userData:any;
+  constructor(private fb: FormBuilder,private route:Router,private accountService:AccountService,private invoiceService:InvoiceService,private settingsService:SettingsService,private authService: AuthService) {
+    this.userData = this.authService.getUserData();
 
-  constructor(private fb: FormBuilder,private route:Router,private accountService:AccountService,private invoiceService:InvoiceService,private settingsService:SettingsService) {
     this.invoiceForm = this.fb.group({
     VoucherNo: ['DRAFT'],
     LedgerId: [null, Validators.required],
@@ -264,7 +267,7 @@ getProductList() {
     let master = new SalesMaster();
     master = {
       ...this.invoiceForm.value,
-      UserId: 'test',
+      UserId: this.userData.UserName,
       TotalAmount: this.invoiceForm.get('TotalAmount')?.value || 0,
       NetAmounts: this.invoiceForm.get('NetAmounts')?.value || 0,
       TaxRate: 0,
@@ -273,7 +276,7 @@ getProductList() {
       DisPer: 0,
       PreviousDue: this.invoiceForm.get('GrandTotal')?.value || 0,
       BalanceDue: this.invoiceForm.get('GrandTotal')?.value || 0,
-      CompanyId: 1,
+      CompanyId: this.userData.CompanyId,
       FinancialYearId: 1,
       VoucherTypeId: 9,
       SerialNo: "0",
