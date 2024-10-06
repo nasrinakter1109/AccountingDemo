@@ -5,7 +5,7 @@ import { provideClientHydration, BrowserModule } from '@angular/platform-browser
 import { provideHttpClient } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 import { NgSelectModule } from '@ng-select/ng-select';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -18,13 +18,9 @@ export const appConfig: ApplicationConfig = {
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatSnackBarModule,
+
     NgSelectModule,
-    // Properly configure ToastrModule
-    ToastrModule.forRoot({
-      positionClass: 'toast-bottom-right',
-      preventDuplicates: true,
-    }),
+   
   ],
 };
 

@@ -1,7 +1,4 @@
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
-@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import '@angular/material/prebuilt-themes/purple-green.css';
+
 
 html, body {
   height: 100%;
@@ -52,17 +49,7 @@ app-footer {
 }
 
 
-@mixin keyframes($name) {
-    @-webkit-keyframes #{$name} {
-        @content;
-    }
-    @-moz-keyframes #{$name} {
-        @content;
-    }
-    @keyframes #{$name} {
-        @content;
-    }
-}
+
 
 
 @media(min-width: 720px) {

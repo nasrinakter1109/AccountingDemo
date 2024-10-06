@@ -1,5 +1,4 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { JournalService } from '../../services/journal.service';
 import { UserService } from '../../services/user.service';
@@ -15,7 +14,7 @@ import { concatMap, tap } from 'rxjs/operators';
 @Component({
   selector: 'app-sales-invoice-view',
   standalone: true,
-  imports: [RouterOutlet,CommonModule,ReactiveFormsModule,RouterModule, MatSnackBarModule],
+  imports: [RouterOutlet,CommonModule,ReactiveFormsModule,RouterModule],
   templateUrl: './sales-invoice-view.component.html',
   styleUrl: './sales-invoice-view.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -36,7 +35,7 @@ export class SalesInvoiceViewComponent implements OnInit {
   constructor(
     private invoiceService: InvoiceService,
     private userService:UserService,
-    private snackBar: MatSnackBar,
+    // private snackBar: MatSnackBar,
     private route: ActivatedRoute,private router:Router,private settingsService:SettingsService
   ) {}
 
