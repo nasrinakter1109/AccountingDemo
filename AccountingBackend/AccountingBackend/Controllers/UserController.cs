@@ -1,8 +1,13 @@
-﻿using AccountingBackend.Data.Authentication;
+﻿using AccountingBackend.Data;
+using AccountingBackend.Data.Authentication;
 using AccountingBackend.Repository.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace AccountingBackend.Controllers
 {
@@ -12,10 +17,13 @@ namespace AccountingBackend.Controllers
     {
         private readonly IUser _user;
         private readonly ICompany _company;
-        public UserController(IUser user, ICompany company)
+        private readonly IConfiguration _config;
+
+        public UserController(IUser user, ICompany company, IConfiguration config)
         {
             _user = user;
             _company = company;
+            _config = config;
         }
 
 
@@ -81,5 +89,7 @@ namespace AccountingBackend.Controllers
                 return BadRequest(err.Message);
             }
         }
+        
     }
 }
+

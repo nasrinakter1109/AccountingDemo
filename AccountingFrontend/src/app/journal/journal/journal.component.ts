@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
 import { AccountLedgerView } from '../../models/account-ledger-view';
 import { AccountService } from '../../services/account.service';
+import { AuthService } from '../../services/auth.service';
 
 
 @Component({
@@ -27,7 +28,8 @@ export class JournalComponent implements OnInit{
    btnStatus:string="Save";
    isSubmit:boolean=false;
    isSaveClick:boolean=false;
-  constructor(private fb:FormBuilder,private journalService:JournalService,private accountService:AccountService,private route:Router){
+  constructor(private fb:FormBuilder,private journalService:JournalService,private accountService:AccountService,private route:Router,private authService: AuthService){
+    const userData = this.authService.getUserData();
     this.journalForm=this.fb.group({
       JournalMasterId : [0],
       SerialNo : [''],
@@ -36,7 +38,7 @@ export class JournalComponent implements OnInit{
       Date : [,Validators.required],
       Amount : [0],
       Narration : [''],
-      UserId : ["1"],
+      UserId : [],
       VoucherTypeId : [5],
       FinancialYearId : [1],
       CompanyId : [1],

@@ -362,6 +362,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AccountingBackend.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "AccountingBackend.Data.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AccountingBackend.Controllers.PrivilegeController",
     "Method": "SavePrivilege",
     "RelativePath": "api/Privilege",

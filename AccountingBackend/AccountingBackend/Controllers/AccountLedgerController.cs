@@ -140,13 +140,13 @@ namespace AccountingBackend.Controllers
 
             if (accountLedger.IsDefault)
             {
-                return Conflict("Default value cannot be deleted.");
+                return Ok("Default value cannot be deleted.");
             }
 
             var result = await _customerSupplier.Delete(id);
             if (!result)
             {
-                return Conflict("Cannot be deleted. Already in use.");
+                return Ok("Cannot be deleted. Already in use.");
             }
 
             return NoContent();

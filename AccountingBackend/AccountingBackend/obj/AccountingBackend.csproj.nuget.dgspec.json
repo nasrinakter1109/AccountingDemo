@@ -50,17 +50,15 @@
               "target": "Package",
               "version": "[1.1.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },
@@ -70,11 +68,11 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.8.6, )"
             },
             "itextsharp": {
               "target": "Package",
-              "version": "[5.5.13, )"
+              "version": "[5.5.13.4, )"
             }
           },
           "imports": [
