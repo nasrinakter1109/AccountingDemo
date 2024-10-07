@@ -1,0 +1,48 @@
+<!-- Full-page background container -->
+<div class="login-page">
+  <div class="login-container">
+    <div class="login-card">
+      <!-- Welcome and instruction text -->
+      <div class="login-header">
+        <h3>Welcome Back</h3>
+        <p>Please log in to your account</p>
+      </div>
+
+      <!-- Login form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="login-form">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <div class="input-wrapper">
+            <input type="email" id="Email" formControlName="Email" placeholder="Enter your email" />
+          </div>
+          <!-- Validation error for email -->
+          <div *ngIf="loginForm.get('Email')?.invalid && loginForm.get('Email')?.touched" class="error">
+            Please enter a valid email.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <div class="input-wrapper">
+            <input type="password" id="Password" formControlName="Password" placeholder="Enter your password" />
+          </div>
+          <!-- Validation error for password -->
+          <div *ngIf="loginForm.get('Password')?.hasError('minlength') && loginForm.get('Password')?.touched" class="error">
+            Password must be at least 6 characters long.
+          </div>
+        </div>
+
+        <div class="form-group form-action">
+          <button type="submit" class="btn btn-login" [disabled]="loginForm.invalid || isProcessing">
+            <span *ngIf="!isProcessing">Sign In</span>
+            <span *ngIf="isProcessing">Signing in...</span>
+          </button>
+        </div>
+
+        <div class="login-footer">
+          <a href="/forgot-password">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

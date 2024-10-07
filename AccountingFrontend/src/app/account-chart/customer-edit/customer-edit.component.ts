@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators,ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, Router,RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
+
 @Component({
   selector: 'app-customer-edit',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './customer-edit.component.html',
-  styleUrl: './customer-edit.component.css'
+  styleUrls: ['./customer-edit.component.css']
 })
 export class CustomerEditComponent implements OnInit {
   id?: number;
   customerLedgerForm: FormGroup;
-  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router) {
+  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router,private modalService: ModalService) {
     this.customerLedgerForm = this.fb.group({
       LedgerId :[0],
       AccountGroupId :[26],
@@ -39,9 +38,8 @@ export class CustomerEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Retrieve the 'id' parameter and use the non-null assertion operator
     this.router.paramMap.subscribe(params => {
-      this.id = +params.get('id')!; // '!' asserts that id will not be null
+      this.id = +params.get('id')!;
       console.log('Customer ID:', this.id);
     });
     this.edit(this.id!)
@@ -61,18 +59,16 @@ export class CustomerEditComponent implements OnInit {
      });;
 
   }
-
-   async onSubmit() {
+  async onSubmit() {
     this.customerLedgerForm.get('LedgerCode')?.enable();
-     if (this.customerLedgerForm.value.LedgerId>0) {
+     if (this.customerLedgerForm.value.LedgerId) {
        await this.accountService.updateAccount(this.customerLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Updated!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.customerLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/customer-list']);
+         this.route.navigate(['/account/customer-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Failed', 'Form submitted Failed!');
           this.customerLedgerForm.get('LedgerCode')?.disable();
         }
        },(err:any)=>{
@@ -80,35 +76,38 @@ export class CustomerEditComponent implements OnInit {
        });
 
      } else {
-      console.log(this.customerLedgerForm.value)
       if(this.customerLedgerForm.valid){
+        console.log({saveresult:this.customerLedgerForm.value})
         await this.accountService.createAccount(this.customerLedgerForm.value).subscribe((data:any)=>{
           if(data.status){
-           // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-           alert("SuccessFully Save!");
+            this.modalService.show('Success', 'Form submitted successfully!');
            this.customerLedgerForm.get('LedgerCode')?.disable();
-           this.route.navigate(['/customer-list']);
+           this.route.navigate(['/account/customer-list']);
           }else{
-            alert(data.message)
+            this.modalService.show('Failed', 'Form submitted Failed!');
             this.customerLedgerForm.get('LedgerCode')?.disable();
-
           }
          },(err:any)=>{
           alert(err.error.message)
          });
+      }else{
+        this.modalService.show('Error', 'Please fill out all required fields.');
       }
+
      }
 
    }
+
    resetForm() {
     this.customerLedgerForm.reset({
       LedgerId :0,
+      AccountGroupId:26,
         LedgerName :'',
         LedgerCode :'',
         CompanyId :1,
+        IsDefault :true,
         OpeningBalance :0,
-        IsDefault :0,
-        CrOrDr :'',
+        CrOrDr :'Dr',
         Address :'',
         Phone :'',
         Email :'',
@@ -116,10 +115,13 @@ export class CustomerEditComponent implements OnInit {
         Country :'',
         City :'',
         TaxNo :'',
-        CreditPeriod :'',
-        CreditLimit :'',
+        CreditPeriod :0,
+        CreditLimit :0,
+        Type :'Customer',
         AccountName :'',
         AccountNo :'',
     });
+    this.modalService.show('Info', 'Form has been reset.');
+      this.ngOnInit();
   }
 }

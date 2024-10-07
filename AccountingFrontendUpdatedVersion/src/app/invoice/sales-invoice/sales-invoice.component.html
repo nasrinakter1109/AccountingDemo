@@ -1,0 +1,179 @@
+<div class="content">
+  <div class="page-header">
+    <div class="page-title">
+      <h4>New Sales Invoice</h4>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="invoiceForm">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="form-group">
+              <label for="invoiceNumber">#Invoice Number</label>
+              <div class="row">
+                <div class="col-lg-10 col-sm-10 col-10">
+                  <input type="text" formControlName="VoucherNo" readonly class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="form-group">
+              <label for="customerName">Customer Name</label>
+              <div class="row">
+                <div class="col-lg-10 col-sm-10 col-10">
+                  <ng-select [items]="listLedger" bindLabel="LedgerName" bindValue="LedgerId"
+                  formControlName="LedgerId"  [searchable]="true" [clearable]="true">
+                      </ng-select>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="form-group">
+              <label for="invoiceDate">Invoice Date</label>
+              <input type="date" formControlName="Date" class="form-control" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="form-group">
+              <label for="dueDate">Due Date</label>
+              <input type="date" formControlName="DueDate" class="form-control" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <div class="form-group">
+              <label for="referenceNumber">Reference No.</label>
+              <input type="text" formControlName="Reference" class="form-control" placeholder="Purchase order reference" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-6 col-12">
+          <div class="form-group">
+            <label>Product Name</label>
+            <div class="input-groupicon">
+              <ng-select [items]="listProduct" bindLabel="ProductName" bindValue="ProductName"
+                       [searchable]="true" [clearable]="true"
+                         (change)="onChange($event)" >
+
+                <ng-template ng-option-tmp let-item="item" let-index="index">
+                  <div class="d-flex justify-content-between">
+                    <span>{{ item.ProductCode }} - {{ item.ProductName }}</span>
+                    <span>Stock: {{ item.CurrentStock }}</span>
+                  </div>
+                </ng-template>
+              </ng-select>
+            </div>
+          </div>
+        </div>
+
+        <div formArrayName="items" class="row">
+          <div class="data-table m-2 p-0">
+            <table class="table text-center mb-0 table-bordered">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Qty</th>
+                  <th>Unit</th>
+                  <th>Rate</th>
+                  <th>Discount</th>
+                  <th>Tax Amount</th>
+                  <th class="text-end">Amount</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of items.controls as itemsArray; let i=index" [formGroupName]="i">
+                  <td>
+                    <input type="text" formControlName="ProductName" class="form-control" />
+                  </td>
+                  <td>
+                    <input type="number" formControlName="Qty" class="form-control" (keyup)="calculateItemTotal(i)" />
+                  </td>
+                  <td>
+                    <input type="text" formControlName="UnitName" class="form-control" />
+                  </td>
+                  <td>
+                    <input type="number" formControlName="SalesRate" class="form-control" (keyup)="calculateItemTotal(i)" />
+                  </td>
+                  <td>
+                    <input type="number" formControlName="DiscountAmount" class="form-control" (keyup)="calculateItemTotal(i)" />
+                  </td>
+                  <td class="text-end">
+                    <input type="number" formControlName="TaxAmount" class="form-control" readonly />
+                  </td>
+                  <td class="text-end">
+                    <input type="number" formControlName="TotalAmount" class="form-control" readonly />
+                  </td>
+                  <td>
+                    <button (click)="deleteItem(i)" class="btn btn-sm btn-danger font-weight-bold"><span
+                      class="fa fa-times"></span></button>
+                    <!-- <a (click)="deleteItem(i)">
+
+                    </a> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea formControlName="Narration" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="form-group row">
+                <label class="col-md-4" for="netAmounts">Sub Total</label>
+                <div class="col-md-8">
+                  <input type="number" id="netAmounts" class="form-control" formControlName="NetAmounts" readonly />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-4" for="billDiscount">Discount</label>
+                <div class="col-md-8">
+                  <input type="number" id="billDiscount" class="form-control" formControlName="BillDiscount" (keyup)="calculateTotal()" />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-4" for="totalAmount">Taxable Total</label>
+                <div class="col-md-8">
+                  <input type="number" id="totalAmount" class="form-control" formControlName="TotalAmount" readonly />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-4" for="totalTax">VAT</label>
+                <div class="col-md-8">
+                  <input type="number" id="totalTax" class="form-control" formControlName="TotalTax" readonly />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-4" for="grandTotal">Grand Total</label>
+                <div class="col-md-8">
+                  <input type="number" id="grandTotal" class="form-control" formControlName="GrandTotal" readonly />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 demo-inline-spacing center" style="margin: 0 auto; ">
+      <button type="button" class="btn btn-primary float-right mx-1 mt-2" (click)="saveInvoice()">Save</button>
+      <button type="button" class="btn btn-danger float-right mx-1 mt-2" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

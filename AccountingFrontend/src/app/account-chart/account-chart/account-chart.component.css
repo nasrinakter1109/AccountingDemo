@@ -1,0 +1,77 @@
+/* Table Styles */
+table {
+  overflow: scroll;
+  margin-right: 50px;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+td {
+  padding: 10px;
+  padding-top: 0 !important;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Input Number Spin Button Removal */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Table Body Scrolling */
+tbody {
+  display: block;
+  height: 260px;
+  overflow: scroll;
+  background: #efe;
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+thead {
+  width: calc(100% - 6px); 
+}
+
+/* TransTable Max Width for Horizontal Scrolling */
+.transTable {
+  max-width: 1300px;
+  overflow-x: scroll;
+}
+
+/* Button Disabled State */
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router,RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { FormBuilder, FormGroup, Validators,ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
+
 @Component({
   selector: 'app-supplier-edit',
-  standalone: true,
-  imports: [CommonModule,RouterOutlet,ReactiveFormsModule],
   templateUrl: './supplier-edit.component.html',
-  styleUrl: './supplier-edit.component.css'
+  styleUrls: ['./supplier-edit.component.css']
 })
 export class SupplierEditComponent implements OnInit {
   id?: number;
   supplierLedgerForm: FormGroup;
-  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router) {
+  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router,private modalService: ModalService) {
     this.supplierLedgerForm = this.fb.group({
       LedgerId :[0],
       AccountGroupId :[22],
@@ -59,17 +58,16 @@ export class SupplierEditComponent implements OnInit {
 
   }
 
-   async onSubmit() {
+  async onSubmit() {
     this.supplierLedgerForm.get('LedgerCode')?.enable();
      if (this.supplierLedgerForm.value.LedgerId>0) {
        await this.accountService.updateAccount(this.supplierLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Updated!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.supplierLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/supplier-list']);
+         this.route.navigate(['/account/supplier-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Failed', 'Form submitted Failed!');
           this.supplierLedgerForm.get('LedgerCode')?.disable();
         }
        },(err:any)=>{
@@ -77,35 +75,37 @@ export class SupplierEditComponent implements OnInit {
        });
 
      } else {
-      console.log(this.supplierLedgerForm.value)
       if(this.supplierLedgerForm.valid){
         await this.accountService.createAccount(this.supplierLedgerForm.value).subscribe((data:any)=>{
           if(data.status){
-           // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-           alert("SuccessFully Save!");
+            this.modalService.show('Success', 'Form submitted successfully!');
            this.supplierLedgerForm.get('LedgerCode')?.disable();
-           this.route.navigate(['/supplier-list']);
+           this.route.navigate(['/account/supplier-list']);
           }else{
-            alert(data.message)
+            this.modalService.show('Failed', 'Form submitted Failed!');
             this.supplierLedgerForm.get('LedgerCode')?.disable();
 
           }
          },(err:any)=>{
           alert(err.error.message)
          });
+      }else{
+        this.modalService.show('Error', 'Please fill out all required fields.');
       }
      }
-
    }
+
+
    resetForm() {
     this.supplierLedgerForm.reset({
       LedgerId :0,
+      AccountGroupId:22,
         LedgerName :'',
         LedgerCode :'',
         CompanyId :1,
+        IsDefault :true,
         OpeningBalance :0,
-        IsDefault :0,
-        CrOrDr :'',
+        CrOrDr :'Dr',
         Address :'',
         Phone :'',
         Email :'',
@@ -113,10 +113,13 @@ export class SupplierEditComponent implements OnInit {
         Country :'',
         City :'',
         TaxNo :'',
-        CreditPeriod :'',
-        CreditLimit :'',
+        CreditPeriod :0,
+        CreditLimit :0,
+        Type :'Supplier',
         AccountName :'',
         AccountNo :'',
     });
+    this.modalService.show('Info', 'Form has been reset.');
+    this.ngOnInit();
   }
 }

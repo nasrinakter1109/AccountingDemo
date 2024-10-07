@@ -1,0 +1,50 @@
+/* Make sure the main layout takes full height */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Sidebar and content are laid out horizontally */
+.layout-container {
+  display: flex;
+  flex: 1; /* Take remaining height between navbar and footer */
+  flex-direction: row; /* Align sidebar and content side by side */
+}
+
+/* Sidebar should only take up height between navbar and footer */
+.sidebar {
+  width: 250px; /* Fixed width */
+  background-color: #473ee9;
+  color: white;
+  padding: 20px;
+  height: auto; /* Sidebar height will be flexible and only take height between navbar and footer */
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+/* Content area next to the sidebar */
+.layout-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up the remaining width */
+}
+
+/* The content grows to fill the available height */
+.page-wrapper {
+  flex-grow: 1; /* Ensure page content takes remaining space */
+  overflow-y: auto; /* Scrollable content if necessary */
+}
+
+/* Navbar stays at the top */
+app-navbar {
+  flex-shrink: 0; /* Ensure navbar does not shrink */
+}
+
+/* Footer stays at the bottom */
+app-footer {
+  background-color: #091e35;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0; /* Ensure footer does not shrink */
+}

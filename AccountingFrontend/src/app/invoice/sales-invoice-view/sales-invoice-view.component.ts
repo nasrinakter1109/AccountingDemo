@@ -1,23 +1,16 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule, RouterOutlet } from '@angular/router';
-import { JournalService } from '../../services/journal.service';
-import { UserService } from '../../services/user.service';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { JournalMaster } from '../../models/journal-master';
-import { JournalDetails } from '../../models/journal-details';
-import { SettingsService } from '../../services/settings.service';
-import { InvoiceService } from '../../services/invoice.service';
-import { SalesMaster } from '../../models/sales-master';
-import { SalesDetails } from '../../models/sales-details';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { InvoiceService } from 'src/app/services/invoice.service';
+import { SettingsService } from 'src/app/services/settings.service';
+import { UserService } from 'src/app/services/user.service';
 import { concatMap, tap } from 'rxjs/operators';
+import { SalesMaster } from 'src/app/models/sales-master';
+import { SalesDetails } from 'src/app/models/sales-details';
+import { ModalService } from 'src/app/Shared/modal.service';
 @Component({
   selector: 'app-sales-invoice-view',
-  standalone: true,
-  imports: [RouterOutlet,CommonModule,ReactiveFormsModule,RouterModule],
   templateUrl: './sales-invoice-view.component.html',
-  styleUrl: './sales-invoice-view.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  styleUrls: ['./sales-invoice-view.component.css']
 })
 export class SalesInvoiceViewComponent implements OnInit {
   model: any;
@@ -36,7 +29,7 @@ export class SalesInvoiceViewComponent implements OnInit {
     private invoiceService: InvoiceService,
     private userService:UserService,
     // private snackBar: MatSnackBar,
-    private route: ActivatedRoute,private router:Router,private settingsService:SettingsService
+    private route: ActivatedRoute,private router:Router,private settingsService:SettingsService,private modalService: ModalService
   ) {}
 
   ngOnInit(): void {
@@ -150,9 +143,8 @@ export class SalesInvoiceViewComponent implements OnInit {
     }
        await this.invoiceService.approved(master).subscribe((data:any)=>{
         if (data.status) {
-          // this.snackBar.open('Successfully saved Journal Voucher.', 'Close', { duration: 3000 });
-          alert(data.message)
-          this.router.navigate(['/salesInvoice-list']);
+          this.modalService.show('Success', 'Approved!');
+          this.router.navigate(['/account/salesInvoice-list']);
         }
        });
 

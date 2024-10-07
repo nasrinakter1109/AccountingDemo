@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AppConfig } from '../app.config';
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class JournalService {
-  private baseUrl = AppConfig.apiUrl;
+  private baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
   getSerialNo(){
@@ -21,7 +22,7 @@ export class JournalService {
   getJournalMasterView(journalMasterId:number){
     return this.http.get(`${this.baseUrl}/Journal/MasterView/${journalMasterId}`);
   }
-  
+
 
   getAll(){
     return this.http.get(`${this.baseUrl}/Journal`);

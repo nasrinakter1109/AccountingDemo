@@ -1,0 +1,163 @@
+<div class="content">
+  <header class="page-header">
+    <div class="page-title">
+      <h4>Sales Invoice</h4>
+    </div>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <div class="col-md-12 demo-inline-spacing center " style="margin: 0 auto;">
+        <h2 style="font-size: 15px; font-weight: 600;">Sales Invoice Detail: {{ model?.VoucherNo }}</h2>
+        <button class="btn btn-primary float-right mx-1 " (click)="approve()" *ngIf="model?.PaymentStatus === 'Draft'">Approved</button>
+        <!-- <button [routerLink]="['/salesInvoice-edit', model?.SalesMasterId]" *ngIf="model?.Status !== 'Draft'"><img src="assets/img/icons/edit.svg" alt="img" />Edit</button>
+            <button style="cursor: pointer;" (click)="print()" *ngIf="model?.Status !== 'Draft'"><img src="assets/img/icons/printer.svg" alt="img" />Print</button> -->
+    </div>
+      <!-- Printable form content -->
+      <form id="printable-form">
+        <div class="invoice-box table-height" style="color: #555;">
+          <table cellpadding="0" cellspacing="0" style="width: 100%;line-height: inherit;text-align: left;">
+            <tbody>
+              <tr class="top">
+
+                <td colspan="7" style="padding: 5px;vertical-align: top;">
+                  <table style="width: 100%;line-height: inherit;text-align: left;">
+                    <tbody>
+                      <tr>
+                        <td style="width: 38%; padding: 5px; vertical-align: top; text-align: left; padding-bottom: 20px;">
+                          <span style="font-size: 14px; color: #7367F0; font-weight: 600; line-height: 35px;">Customer Info</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{model?.LedgerName}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{model?.Email}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{model?.Phone}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{model?.Address}}</span><br>
+                        </td>
+                        <td style="width: 34%; padding: 5px; vertical-align: top; text-align: left; padding-bottom: 20px;">
+                          <span style="font-size: 14px; color: #7367F0; font-weight: 600; line-height: 35px;">Company Info</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{company?.CompanyName}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{company?.Email}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{company?.PhoneNo}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 400;">{{company?.Address}}</span><br>
+                        </td>
+                        <td style="padding: 5px; vertical-align: top; text-align: left; padding-bottom: 20px;">
+                          <span style="font-size: 14px; color: #7367F0; font-weight: 600; line-height: 35px;">Invoice Info</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 600;">Invoice No: {{model?.VoucherNo}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 600;">Invoice Date: {{model?.Date}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 600;">Reference: {{model?.Reference}}</span><br>
+                          <span style="font-size: 14px; color: #000; font-weight: 600;">Status: {{model?.PaymentStatus}}</span><br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+
+              </tr>
+              <tr class="heading " style="background: #F3F2F7;">
+                <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                  Product Name
+                  </td>
+                  <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                    Qty
+                    </td>
+                    <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                      Unit
+                    </td>
+                  <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                    Price
+                  </td>
+                  <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                    Discount
+                  </td>
+                  <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                    Tax
+                  </td>
+                  <td style="padding: 5px;vertical-align: middle;font-weight: 600;color: #5E5873;font-size: 14px;padding: 10px; ">
+                    Subtotal
+                </td>
+              </tr>
+              <tr *ngFor="let item of productList" class="details" style="border-bottom:1px solid #E9ECEF ;">
+                    <td style="padding: 10px;vertical-align: top; display: flex;align-items: center;">
+                      {{item?.ProductName}}
+                    </td>
+                    <td style="padding: 10px;vertical-align: top; ">
+                      {{item?.Qty}}
+                    </td>
+                <td style="padding: 10px;vertical-align: top; ">
+                  {{item?.UnitName}}
+                </td>
+                    <td style="padding: 10px;vertical-align: top; ">
+                      {{item?.SalesRate}}
+                    </td>
+                    <td style="padding: 10px;vertical-align: top; ">
+                      {{item?.DiscountAmount}}
+                    </td>
+                    <td style="padding: 10px;vertical-align: top; ">
+                      {{item?.TaxAmount}}
+                    </td>
+                    <td style="padding: 10px;vertical-align: top; ">
+                      {{item?.TotalAmount}}
+                    </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="total-order w-100 max-widthauto m-auto mb-4">
+                          <td colspan="5"></td>
+                          <td style="font-weight:700;">Subtotal</td>
+                      <td style="font-weight:700;">{{model?.NetAmounts}}</td>
+                        </tr>
+              <tr class="total-order w-100 max-widthauto m-auto mb-4">
+                          <td colspan="5"></td>
+                          <td>Discount</td>
+                          <td>{{model?.BillDiscount}}</td>
+                        </tr>
+              <tr class="total-order w-100 max-widthauto m-auto mb-4">
+                          <td colspan="5"></td>
+                          <td style="font-weight:700;">Taxable Total</td>
+                      <td style="font-weight:700;">{{model?.TotalAmount}}</td>
+                        </tr>
+              <tr class="total-order w-100 max-widthauto m-auto mb-4">
+                      <td colspan="5"></td>
+                      <td>Vat</td>
+                      <td>{{model?.TotalTax}}</td>
+              </tr>
+              <tr class="total-order w-100 max-widthauto m-auto mb-4">
+                      <td colspan="5"></td>
+                      <td style="font-weight:700;">Grand Total</td>
+                      <td style="font-weight:700;">{{model?.GrandTotal}}</td>
+              </tr>
+            </tfoot>
+          </table>
+          </div>
+          <table>
+            <tbody>
+            <tr>
+              <td>
+                <span style="vertical-align: inherit;"><span style="vertical-align: inherit;font-size: 15px;color:#000;font-weight: 700;"> Amount In Words </span></span><br>
+                <span style="vertical-align: inherit;"><span style="vertical-align: inherit;font-size: 15px;color:#000;font-weight: 400;"> {{strNumberToWords}} </span></span><br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span style="vertical-align: inherit;"><span style="vertical-align: inherit;font-size: 15px;color:#000;font-weight: 700;"> Narration </span></span><br>
+                <span style="vertical-align: inherit;"><span style="vertical-align: inherit;font-size: 15px;color:#000;font-weight: 400;"> {{model?.Narration}} </span></span><br>
+              </td>
+            </tr>
+            </tbody>
+        </table>
+          <div class="row">
+            <div class="col-lg-10">
+            <h6>Created by:</h6> <br/>
+              <h6>{{model?.AddedDate}}</h6>
+                  </div>
+                  <div class="col-lg-2" style="float:right;">
+              <h6>Approved by:</h6> <br />
+            <h5>
+              <span style="font-size:12px;" *ngIf="model?.PaymentStatus == 'Draft'">Not Approved</span>
+
+                <span style="font-size:12px;">{{model?.UserId}}</span>
+            </h5>
+          </div>
+         </div>
+      </form>
+  </div>
+</div>
+</div>
+<app-approve-dialog *ngIf="approveDialogOpen" (close)="onApproveDialogClose($event)"></app-approve-dialog>

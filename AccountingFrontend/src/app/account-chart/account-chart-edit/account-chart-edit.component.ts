@@ -1,22 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { CommonModule } from '@angular/common';
-import { AccountGroupView } from '../../models/account-group-view';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AccountGroupView } from 'src/app/models/account-group-view';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-account-chart-edit',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './account-chart-edit.component.html',
-  styleUrl: './account-chart-edit.component.css'
+  styleUrls: ['./account-chart-edit.component.css']
 })
 export class AccountChartEditComponent implements OnInit {
   id?: number;
   accountLedgerForm: FormGroup;
   listGroup: AccountGroupView[] = [];
-  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router) {
+  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router,private modalService: ModalService) {
     this.accountLedgerForm = this.fb.group({
       LedgerId :[0],
       AccountGroupId :[],
@@ -72,16 +70,15 @@ export class AccountChartEditComponent implements OnInit {
   }
 
    async onSubmit() {
-    this.accountLedgerForm.get('LedgerCode')?.enable();
      if (this.accountLedgerForm.value.LedgerId>0) {
+      this.accountLedgerForm.get('LedgerCode')?.enable();
        await this.accountService.updateAccount(this.accountLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Updated!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.accountLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/account-list']);
+         this.route.navigate(['/account/account-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Error', 'Please fill out all required fields.');
           this.accountLedgerForm.get('LedgerCode')?.disable();
         }
        },(err:any)=>{
@@ -91,14 +88,14 @@ export class AccountChartEditComponent implements OnInit {
      } else {
       console.log(this.accountLedgerForm.value)
       if(this.accountLedgerForm.valid){
+        this.accountLedgerForm.get('LedgerCode')?.enable();
         await this.accountService.createAccount(this.accountLedgerForm.value).subscribe((data:any)=>{
           if(data.status){
-           // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-           alert("SuccessFully Save!");
+           this.modalService.show('Success', 'Form submitted successfully!');
            this.accountLedgerForm.get('LedgerCode')?.disable();
-           this.route.navigate(['/account-list']);
+           this.route.navigate(['/account/account-list']);
           }else{
-            alert(data.message)
+            this.modalService.show('Error', 'Please fill out all required fields.');
             this.accountLedgerForm.get('LedgerCode')?.disable();
 
           }
@@ -112,12 +109,13 @@ export class AccountChartEditComponent implements OnInit {
    resetForm() {
     this.accountLedgerForm.reset({
       LedgerId :0,
+      AccountGroupId:0,
         LedgerName :'',
         LedgerCode :'',
         CompanyId :1,
         OpeningBalance :0,
-        IsDefault :0,
-        CrOrDr :'',
+        IsDefault :true,
+        CrOrDr :'Dr',
         Address :'',
         Phone :'',
         Email :'',
@@ -125,10 +123,14 @@ export class AccountChartEditComponent implements OnInit {
         Country :'',
         City :'',
         TaxNo :'',
-        CreditPeriod :'',
-        CreditLimit :'',
+        CreditPeriod :0,
+        CreditLimit :0,
+        Type :'Accounts',
         AccountName :'',
         AccountNo :'',
     });
+    this.modalService.show('Info', 'Form has been reset.');
+    this.ngOnInit();
+    //this.route.navigate(['/account/account-list']);
   }
 }

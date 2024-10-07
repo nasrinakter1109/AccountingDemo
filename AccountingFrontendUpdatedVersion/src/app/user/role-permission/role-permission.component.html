@@ -1,0 +1,31 @@
+<div class="card mt-5">
+  <h4 class="card-header text-center ">Role Permission</h4>
+  <div class="card-body">
+  <div class="form-group row">
+    <label class="col-form-label col-md-2 ">Role</label>
+    <div class="col-md-10">
+      <select  [(ngModel)]="selectedRoleId" (change)="onRoleChange(selectedRoleId)">
+        <option [value]="0">Choose Role</option>
+        <option *ngFor="let role of roles" [value]="role.RoleId">{{ role.RoleName }}</option>
+      </select>
+    </div>
+  </div>
+
+  <table table text-center mb-0 table-bordered *ngIf="privileges.length > 0">
+    <thead>
+      <tr>
+        <th>Form Name</th>
+        <th>Show Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let privilege of privileges">
+        <td>{{ privilege.FormName }}</td>
+        <td><input type="checkbox" [(ngModel)]="privilege.ShowAction" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary" (click)="savePrivileges()">Update</button>
+</div>
+</div>

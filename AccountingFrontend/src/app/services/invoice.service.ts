@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AppConfig } from '../app.config';
+import { environment } from 'src/environments/environment';
 import { SalesMaster } from '../models/sales-master';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { SalesMaster } from '../models/sales-master';
 export class InvoiceService {
 
 
-  private baseUrl = AppConfig.apiUrl;
+  private baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 

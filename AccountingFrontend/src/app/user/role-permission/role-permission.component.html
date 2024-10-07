@@ -2,8 +2,8 @@
   <h4 class="card-header text-center ">Role Permission</h4>
   <div class="card-body">
   <div class="form-group row">
-    <label class="col-form-label col-md-2 ">Role</label>
-    <div class="col-md-10">
+    <label class="col-form-label col-md-3">Role</label>
+    <div class="col-md-9">
       <select  [(ngModel)]="selectedRoleId" (change)="onRoleChange(selectedRoleId)">
         <option [value]="0">Choose Role</option>
         <option *ngFor="let role of roles" [value]="role.RoleId">{{ role.RoleName }}</option>

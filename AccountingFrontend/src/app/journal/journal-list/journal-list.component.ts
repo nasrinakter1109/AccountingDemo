@@ -1,20 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Router ,RouterOutlet} from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { JournalMasterView } from '../../models/journal-master-view';
-import { JournalService } from '../../services/journal.service';
+import { Router } from '@angular/router';
+import { JournalMasterView } from 'src/app/models/journal-master-view';
+import { JournalService } from 'src/app/services/journal.service';
+
 @Component({
   selector: 'app-journal-list',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    FormsModule,
-    CommonModule,
-  ],
   templateUrl: './journal-list.component.html',
-  styleUrl: './journal-list.component.css'
+  styleUrls: ['./journal-list.component.css']
 })
 export class JournalListComponent implements OnInit {
 
@@ -28,8 +20,8 @@ export class JournalListComponent implements OnInit {
    this.loadData();
   }
 
-  async loadData() {
-    await this.journalService.getAll().subscribe((data:any)=>{
+   loadData() {
+     this.journalService.getAll().subscribe((data:any)=>{
      if(data.status){
        this.listModel=data.result;
      }else{
@@ -39,11 +31,13 @@ export class JournalListComponent implements OnInit {
  }
 
   addNew(){
-    this.route.navigate(['/journal']);
+    this.route.navigate(['/account/journal']);
   }
 
-
-  async edit(id: number) {
-    this.route.navigate(['/journal/view/',id]);
+   view(id: number) {
+    this.route.navigate(['/account/journal/view/',id]);
+  }
+   edit(id: number) {
+    this.route.navigate(['/account/journal-edit/',id]);
   }
 }

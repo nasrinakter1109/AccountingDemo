@@ -23,10 +23,13 @@
               <label for="customerName">Customer Name</label>
               <div class="row">
                 <div class="col-lg-10 col-sm-10 col-10">
-                  <ng-select [items]="listLedger" bindLabel="LedgerName" bindValue="LedgerId"
+                  <!-- <ng-select [items]="listLedger" bindLabel="LedgerName" bindValue="LedgerId"
                   formControlName="LedgerId"  [searchable]="true" [clearable]="true">
-                      </ng-select>
+                      </ng-select> -->
+                      <select formControlName="LedgerId" (change)="onLedgerChange($event)" class="form-control" placeholder="Select Customer">
 
+                        <option *ngFor="let ledger of listLedger" [value]="ledger.LedgerId">{{ ledger.LedgerName }}</option>
+                      </select>
                 </div>
               </div>
             </div>
@@ -54,7 +57,10 @@
           <div class="form-group">
             <label>Product Name</label>
             <div class="input-groupicon">
-              <ng-select [items]="listProduct" bindLabel="ProductName" bindValue="ProductName"
+              <select formControlName="ProductId" (change)="onChange($event)" class="form-control" placeholder="Select product">
+                <option *ngFor="let product of listProduct" [value]="product.ProductId">{{ product.ProductName }}</option>
+              </select>
+              <!-- <ng-select [items]="listProduct" bindLabel="ProductName" bindValue="ProductName"
                        [searchable]="true" [clearable]="true"
                          (change)="onChange($event)" >
 
@@ -64,7 +70,7 @@
                     <span>Stock: {{ item.CurrentStock }}</span>
                   </div>
                 </ng-template>
-              </ng-select>
+              </ng-select> -->
             </div>
           </div>
         </div>

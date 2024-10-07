@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { AccountService } from '../../services/account.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
+
 @Component({
   selector: 'app-supplier',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './supplier.component.html',
-  styleUrl: './supplier.component.css'
+  styleUrls: ['./supplier.component.css']
 })
 export class SupplierComponent implements OnInit {
   supplierLedgerForm: FormGroup;
@@ -19,7 +18,7 @@ export class SupplierComponent implements OnInit {
 
   constructor(
     private accountService: AccountService,
-    private fb: FormBuilder,private route:Router
+    private fb: FormBuilder,private route:Router,private modalService: ModalService
   ) {
     this.supplierLedgerForm = this.fb.group({
       LedgerId :[0],
@@ -64,12 +63,11 @@ export class SupplierComponent implements OnInit {
    if (this.supplierLedgerForm.value.LedgerId>0) {
      await this.accountService.updateAccount(this.supplierLedgerForm.value).subscribe((data:any)=>{
       if(data.status){
-       // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-       alert("SuccessFully Updated!");
+        this.modalService.show('Success', 'Form submitted successfully!');
        this.supplierLedgerForm.get('LedgerCode')?.disable();
-       this.route.navigate(['/supplier-list']);
+       this.route.navigate(['/account/supplier-list']);
       }else{
-        alert(data.message)
+        this.modalService.show('Failed', 'Form submitted Failed!');
         this.supplierLedgerForm.get('LedgerCode')?.disable();
       }
      },(err:any)=>{
@@ -77,45 +75,36 @@ export class SupplierComponent implements OnInit {
      });
 
    } else {
-    console.log(this.supplierLedgerForm.value)
     if(this.supplierLedgerForm.valid){
       await this.accountService.createAccount(this.supplierLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Save!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.supplierLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/supplier-list']);
+         this.route.navigate(['/account/supplier-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Failed', 'Form submitted Failed!');
           this.supplierLedgerForm.get('LedgerCode')?.disable();
 
         }
        },(err:any)=>{
         alert(err.error.message)
        });
+    }else{
+      this.modalService.show('Error', 'Please fill out all required fields.');
     }
-   }
-
- }
-
- 
-
- async delete(id: number) {
-   const confirmed = confirm('Are you sure you want to delete this account?');
-   if (confirmed) {
-     await this.accountService.deleteAccount(id);
-    //  this.snackbar.open('Account deleted successfully!', 'Close', { duration: 2000 });
    }
  }
  resetForm() {
+  this.modalService.show('Info', 'Form has been reset.');
   this.supplierLedgerForm.reset({
     LedgerId :0,
+    AccountGroupId:22,
       LedgerName :'',
       LedgerCode :'',
       CompanyId :1,
+      IsDefault :true,
       OpeningBalance :0,
-      IsDefault :0,
-      CrOrDr :'',
+      CrOrDr :'Dr',
       Address :'',
       Phone :'',
       Email :'',
@@ -123,13 +112,15 @@ export class SupplierComponent implements OnInit {
       Country :'',
       City :'',
       TaxNo :'',
-      CreditPeriod :'',
-      CreditLimit :'',
+      CreditPeriod :0,
+      CreditLimit :0,
+      Type :'Supplier',
       AccountName :'',
       AccountNo :'',
   });
   this.btnStatus="Save";
   this.getLedgerCode();
+
 }
 
 }

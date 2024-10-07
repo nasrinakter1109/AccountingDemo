@@ -1,0 +1,81 @@
+<div class="card mt-5 m-5">
+
+  <div >
+    <h4 class="card-header text-center">Charts Of Account</h4>  </div>
+
+<div class="card">
+  <div class="card-body">
+
+  <div>
+    <button class="btn btn-primary p-2 m-2" (click)="showTable('ledger')">Ledger List</button>
+    <button class="btn btn-primary p-2 m-2" (click)="showTable('group')">Group List</button>
+    <button class="btn btn-success p-2 m-2" (click)="addNewAccount()">Add New Account</button>
+  </div>
+
+
+
+
+  <div *ngIf="activeTable === 'ledger'">
+      <div class="card ">
+        <div class="card-body p-0">
+          <div class="data-table m-0 p-0">
+            <table class="table text-center mb-0 table-bordered">
+              <thead>
+                <tr>
+
+                  <th style="width:40%">Account Code</th>
+                  <th style="width:40%">Name</th>
+                  <th style="width:10%">Parent Group</th>
+                  <th style="width:10%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listModel; let i = index">
+
+                  <td style="width:40%">{{ item.LedgerCode }}</td>
+                  <td style="width:40%">{{ item.LedgerName }}</td>
+                  <td style="width:10%">{{ item.AccountGroupName }}</td>
+                  <td style="width:10%">
+                    <button class="btn btn-primary btn-sm" (click)="edit(item.LedgerId)">
+                      <span class="fas fa-edit">Edit</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="activeTable === 'group'">
+      <div class="card">
+        <div class="card-body p-0">
+          <div class="data-table m-0 p-0">
+            <table class="table text-center mb-0 table-bordered">
+              <thead>
+                <tr>
+                  <th style="width:40%">Group Name</th>
+                  <th style="width:20%">Group Type</th>
+                  <th style="width:20%">Parent Group</th>
+                  <th style="width:20%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listGroup; let i = index">
+                  <td style="width:40%">{{ item.AccountGroupName }}</td>
+                  <td style="width:20%">{{ item.Nature }}</td>
+                  <td style="width:20%">{{ item.Under }}</td>
+                  <td style="width:20%">
+                    <!-- Add any actions for group list here -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

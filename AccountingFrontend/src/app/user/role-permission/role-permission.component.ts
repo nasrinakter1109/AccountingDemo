@@ -1,26 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Privilege } from '../../models/privilege';
-import { RoleModel } from '../../models/role';
-import { PrivilegeService } from '../../services/privilege.service';
-import { UserService } from '../../services/user.service';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-
+import { Privilege } from 'src/app/models/privilege';
+import { RoleModel } from 'src/app/models/role';
+import { PrivilegeService } from 'src/app/services/privilege.service';
+import { UserService } from 'src/app/services/user.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-role-permission',
-  standalone: true,
-  imports: [FormsModule,RouterModule,CommonModule],
   templateUrl: './role-permission.component.html',
-  styleUrl: './role-permission.component.css'
+  styleUrls: ['./role-permission.component.css']
 })
 export class RolePermissionComponent implements OnInit {
   roles: RoleModel[] = [];
   privileges: Privilege[] = [];
   selectedRoleId: number = 0;
 
-  constructor(private privilegeService: PrivilegeService,private userService: UserService) {}
+  constructor(private privilegeService: PrivilegeService,private userService: UserService,private modalService: ModalService) {}
 
   ngOnInit(): void {
     this.loadRoles();
@@ -55,9 +50,9 @@ export class RolePermissionComponent implements OnInit {
       this.privileges.forEach((privilege) => {
          this.privilegeService.savePrivilege(privilege).subscribe();
       });
-      alert('Privileges updated successfully!');
+      this.modalService.show('Success', 'Privileges updated successfully!!');
     } else {
-      alert('Please select a role first.');
+      this.modalService.show('Error', 'Please fill out all required fields.');
     }
   }
 

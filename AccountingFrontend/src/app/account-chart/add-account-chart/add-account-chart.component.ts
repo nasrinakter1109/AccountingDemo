@@ -1,28 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountGroupView } from '../../models/account-group-view';
-import { AccountService } from '../../services/account.service';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountGroupView } from 'src/app/models/account-group-view';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-add-account-chart',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './add-account-chart.component.html',
-  styleUrl: './add-account-chart.component.css'
+  styleUrls: ['./add-account-chart.component.css']
 })
-export class AddAccountChartComponent implements OnInit {
+export class AddAccountChartComponent  implements OnInit {
   accountLedgerForm: FormGroup;
   listGroup: AccountGroupView[] = [];
   btnStatus:string="Save";
-
-
-
-
   constructor(
     private accountService: AccountService,
-    private fb: FormBuilder,private route:Router
+    private fb: FormBuilder,private route:Router,private modalService: ModalService
   ) {
     this.accountLedgerForm = this.fb.group({
       LedgerId :[0],
@@ -61,8 +55,6 @@ export class AddAccountChartComponent implements OnInit {
       }
      });
   }
-
-
  async loadGroups() {
    await this.accountService.getAllGroups().subscribe((data:any)=>{
      if(data.status){
@@ -72,90 +64,43 @@ export class AddAccountChartComponent implements OnInit {
      }
     });
  }
-
-
  async onSubmit() {
-  this.accountLedgerForm.get('LedgerCode')?.enable();
-   if (this.accountLedgerForm.value.LedgerId) {
-     await this.accountService.updateAccount(this.accountLedgerForm.value).subscribe((data:any)=>{
-      if(data.status){
-        // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-        alert("SuccessFully Updated!");
-        this.accountLedgerForm.get('LedgerCode')?.disable();
-        this.route.navigate(['/account-list']);
-       }else{
-         alert(data.message)
-         this.accountLedgerForm.get('LedgerCode')?.disable();
-       }
-     },(err:any)=>{
-      alert(err.error.message)
-     });
-
-   } else {
     if(this.accountLedgerForm.valid){
+      this.accountLedgerForm.get('LedgerCode')?.enable();
       await this.accountService.createAccount(this.accountLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Save!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.accountLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/account-list']);
+         this.route.navigate(['/account/account-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Error', 'Please fill out all required fields.');
+          this.markFormGroupTouched(this.accountLedgerForm);
           this.accountLedgerForm.get('LedgerCode')?.disable();
         }
        },(err:any)=>{
         alert(err.error.message)
        });
     }
-   }
-
-
  }
 
- async edit(id: number) {
-   await this.accountService.getAccountById(id).subscribe((data:any)=>{
-     if(data.status){
-        this.accountLedgerForm.patchValue(data.result);
-        this.btnStatus="Update";
-     }else{
-      this.btnStatus="Save";
-     }
-    });;
+ markFormGroupTouched(formGroup: FormGroup) {
+  Object.keys(formGroup.controls).forEach(field => {
+    const control = formGroup.get(field);
+    control?.markAsTouched({ onlySelf: true });
+  });
+}
 
- }
-
- async delete(id: number) {
-   const confirmed = confirm('Are you sure you want to delete this account?');
-   if (confirmed) {
-     await this.accountService.deleteAccount(id);
-    //  this.snackbar.open('Account deleted successfully!', 'Close', { duration: 2000 });
-
-   }
- }
  resetForm() {
   this.accountLedgerForm.reset({
     LedgerId :0,
-      AccountGroupId :0,
+    AccountGroupId:0,
       LedgerName :'',
       LedgerCode :'',
-      CompanyId :1,
       OpeningBalance :0,
-      IsDefault :0,
-      CrOrDr :'',
-      Address :'',
-      Phone :'',
-      Email :'',
-      ShippingAddress :'',
-      Country :'',
-      City :'',
-      TaxNo :'',
-      CreditPeriod :'',
-      CreditLimit :'',
-      AccountName :'',
-      AccountNo :'',
+      CrOrDr :'Dr',
   });
   this.btnStatus="Save";
   this.getLedgerCode();
+  this.modalService.show('Info', 'Form has been reset.');
 }
-
 }

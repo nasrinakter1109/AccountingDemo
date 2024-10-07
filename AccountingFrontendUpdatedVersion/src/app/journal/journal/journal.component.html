@@ -1,0 +1,114 @@
+<div class="card mt-5">
+  <div class=" py-0 p-0">
+      <h3 class="text-center mb-0">Journal Voucher</h3>
+  </div>
+  <div class="card-body p-2">
+      <form [formGroup]="journalForm">
+        <div class="col-md-12 row">
+          <div class="col-md-6 ">
+            <div class="form-group row">
+              <label class="col-form-label col-md-5 ">Voucher No</label>
+              <div class="col-md-7">
+                  <input formControlName="VoucherNo"  placeholder="Voucher No" class="form-control" >
+
+              </div>
+          </div>
+          </div>
+          <div class="col-md-6 ">
+              <div class="form-group row">
+                  <label class="col-form-label col-md-5 "><i class="text-danger">*</i>Voucher Date</label>
+                  <div class="col-md-7">
+                    <input type="date" formControlName="Date"  placeholder="Date" class=" form-control" required>
+                    <div *ngIf="journalForm.get('Date')?.invalid && journalForm.get('Date')?.touched" class="text-danger">
+                      Date is required.
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+
+
+          <div class="col-md-12 ">
+              <div class="card transTable">
+                  <div class="card-body p-0">
+                      <div class="data-table m-0">
+                          <table class="table  text-center table-bordered">
+                              <thead>
+                                  <tr>
+                                      <th style="width:50px">SL#</th>
+                                      <th style="width:340px">Account Name</th>
+                                      <th style="width:170px">Debit</th>
+                                      <th style="width:170px">Credit</th>
+                                      <th style="width:200px">Narration</th>
+                                      <th style="width:70px"></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let jarnalArry  of _journalForm.controls;let i=index" [formGroup]="$any(jarnalArry)" >
+                                      <td style="width:50px">{{i+1}}</td>
+                                      <td style="width:340px">
+                                        <select formControlName="LedgerId" class="form-control" >
+                                          <option *ngFor="let ledger of listLedger" [value]="ledger.LedgerId">{{ ledger.LedgerName }}</option>
+                                        </select>
+                                      </td>
+                                      <td style="width:70px;">
+                                          <input (keyup)="debitAmountControl(i,'Debit'+i)"  formControlName="Debit"
+                                              class="form-control" [id]="'Debit'+i" placeholder="0.00" type="number" style="text-align: right;">
+                                      </td>
+                                      <td style="width:70px">
+                                          <input (keyup)="debitAmountControl(i,'Credit'+i)"  formControlName="Credit"
+                                              class="form-control" [id]="'Credit'+i" placeholder="0.00" type="number" style="text-align: right;">
+                                      </td>
+                                      <td style="width:200px">
+                                        <input type="text" class="form-control" formControlName="Narration">
+
+                                      </td>
+
+                                      <td style="width:70px">
+                                          <button (click)="addRow()" [id]="'addItem'+i" *ngIf="_journalForm.controls.length==(i+1)" class="btn btn-sm btn-success"><span class="fa fa-plus"></span></button>
+                                          <button tabindex="-1" (click)="removeRow(i)" class="btn btn-sm btn-danger"><span class="fa fa-times"></span></button>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+                  <div class="card-footer p-0" style="background: rgb(73, 204, 221);color: rgb(17, 3, 67);">
+                      <div class="row mx-3">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-4 mx-5">
+                              <div class="row form-group no-gutters">
+                                  <label for="Amount" class="col-form-label col-md-3 ">Total</label>
+                                  <div class="col-md-3">
+                                      <input formControlName="Amount" tabindex="-1" class=" form-control" placeholder="0.00" style="text-align: left;" >
+                                  </div>
+                                  <div class="col-md-3">
+                                      <input [value]="totalCredit" tabindex="-1" class=" form-control" placeholder="0.00" style="text-align: left;" >
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row  col-md-12 pt-2">
+              <div class="form-group col-md-6 row">
+                  <label class="col-2  font-weight-bold ">Note</label>
+                  <div class="col-10">
+                      <textarea formControlName="Narration" class=" form-control" placeholder="Enter Note"></textarea>
+                  </div>
+              </div>
+
+          </div>
+          <div class="col-md-3 pull-right mx-2" style="margin: 0 auto;">
+              <button  (click)="saveTransaction()" class="btn btn-success mx-2 ">{{btnStatus}}</button>
+              <button (click)="reset()" class="btn btn-primary " tabindex="-1">Reset</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+

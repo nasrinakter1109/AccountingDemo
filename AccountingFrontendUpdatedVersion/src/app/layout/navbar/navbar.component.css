@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #054a83;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left a.logo {
+  margin-right: 20px;
+}
+
+.nav.user-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav.user-menu li {
+  margin-left: 20px;
+}
+
+.user-img img {
+  border-radius: 50%;
+}

@@ -1,23 +1,18 @@
-
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule, RouterOutlet } from '@angular/router';
-import { JournalService } from '../../services/journal.service';
-import { UserService } from '../../services/user.service';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { JournalMaster } from '../../models/journal-master';
-import { JournalDetails } from '../../models/journal-details';
-import { SettingsService } from '../../services/settings.service';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { JournalDetails } from 'src/app/models/journal-details';
+import { JournalMaster } from 'src/app/models/journal-master';
+import { JournalService } from 'src/app/services/journal.service';
+import { SettingsService } from 'src/app/services/settings.service';
+import { UserService } from 'src/app/services/user.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-journal-view',
-  standalone: true,
-  imports: [RouterOutlet,CommonModule,ReactiveFormsModule,RouterModule ],
   templateUrl: './journal-view.component.html',
-  styleUrl: './journal-view.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  styleUrls: ['./journal-view.component.css']
 })
-export class JournalViewComponent  implements OnInit {
+export class JournalViewComponent implements OnInit {
   model: any;
   company: any;
   listJournalDetails: any[] = [];
@@ -27,7 +22,7 @@ export class JournalViewComponent  implements OnInit {
   constructor(
     private journalService: JournalService,
     private userService:UserService,
-    // private snackBar: MatSnackBar,
+    private modalService: ModalService,
     private route: ActivatedRoute,private router:Router,private settingsService:SettingsService
   ) {}
 
@@ -54,10 +49,6 @@ export class JournalViewComponent  implements OnInit {
     return '';
   }
 
-  print(): void {
-    // Implement printing logic using a printing service or window.print()
-  }
-
   openApproveDialog(): void {
     this.approveDialogOpen = true;
   }
@@ -70,9 +61,6 @@ export class JournalViewComponent  implements OnInit {
   }
 
   async approveJournal(): Promise<void> {
-    // if (this.model.VoucherNo === '' || this.model.Amount === 0) {
-    //   this.snackBar.open('Invalid entry.', 'Close', { duration: 3000 });
-    // } else {
       let journalEntry=new JournalMaster();
       journalEntry.Amount=this.model.Amount;
       journalEntry.JournalMasterId=this.model.JournalMasterId;
@@ -107,8 +95,7 @@ export class JournalViewComponent  implements OnInit {
       this
        await this.journalService.approveJournal(journalEntry).subscribe((data:any)=>{
         if (data.status) {
-          // this.snackBar.open('Successfully saved Journal Voucher.', 'Close', { duration: 3000 });
-          alert(data.message)
+          this.modalService.show('Success', 'Form submitted successfully!');
           this.router.navigate(['/journal-list']);
         }
        });

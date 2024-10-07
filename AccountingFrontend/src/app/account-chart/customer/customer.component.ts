@@ -1,22 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { AccountService } from '../../services/account.service';
-import { Router, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-customer',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './customer.component.html',
-  styleUrl: './customer.component.css'
+  styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
   customerLedgerForm: FormGroup;
   btnStatus:string="Save";
   constructor(
     private accountService: AccountService,
-    private fb: FormBuilder,private route:Router
+    private fb: FormBuilder,private route:Router,private modalService: ModalService
   ) {
     this.customerLedgerForm = this.fb.group({
       LedgerId :[0],
@@ -58,12 +56,11 @@ export class CustomerComponent implements OnInit {
    if (this.customerLedgerForm.value.LedgerId) {
      await this.accountService.updateAccount(this.customerLedgerForm.value).subscribe((data:any)=>{
       if(data.status){
-       // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-       alert("SuccessFully Updated!");
+        this.modalService.show('Success', 'Form submitted successfully!');
        this.customerLedgerForm.get('LedgerCode')?.disable();
-       this.route.navigate(['/customer-list']);
+       this.route.navigate(['/account/customer-list']);
       }else{
-        alert(data.message)
+        this.modalService.show('Failed', 'Form submitted Failed!');
         this.customerLedgerForm.get('LedgerCode')?.disable();
       }
      },(err:any)=>{
@@ -72,54 +69,38 @@ export class CustomerComponent implements OnInit {
 
    } else {
     if(this.customerLedgerForm.valid){
+      console.log({saveresult:this.customerLedgerForm.value})
       await this.accountService.createAccount(this.customerLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Save!");
+          this.modalService.show('Success', 'Form submitted successfully!');
          this.customerLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/customer-list']);
+         this.route.navigate(['/account/customer-list']);
         }else{
-          alert(data.message)
+          this.modalService.show('Failed', 'Form submitted Failed!');
           this.customerLedgerForm.get('LedgerCode')?.disable();
         }
        },(err:any)=>{
         alert(err.error.message)
        });
+    }else{
+      this.modalService.show('Error', 'Please fill out all required fields.');
     }
 
    }
 
  }
 
- async edit(id: number) {
-   await this.accountService.getAccountById(id).subscribe((data:any)=>{
-     if(data.status){
-        this.customerLedgerForm.patchValue(data.result);
-        this.btnStatus="Update";
-     }else{
-      this.btnStatus="Save";
-     }
-    });;
 
- }
-
- async delete(id: number) {
-   const confirmed = confirm('Are you sure you want to delete this account?');
-   if (confirmed) {
-     await this.accountService.deleteAccount(id);
-    //  this.snackbar.open('Account deleted successfully!', 'Close', { duration: 2000 });
-
-   }
- }
  resetForm() {
   this.customerLedgerForm.reset({
     LedgerId :0,
+    AccountGroupId:26,
       LedgerName :'',
       LedgerCode :'',
       CompanyId :1,
+      IsDefault :true,
       OpeningBalance :0,
-      IsDefault :0,
-      CrOrDr :'',
+      CrOrDr :'Dr',
       Address :'',
       Phone :'',
       Email :'',
@@ -127,13 +108,14 @@ export class CustomerComponent implements OnInit {
       Country :'',
       City :'',
       TaxNo :'',
-      CreditPeriod :'',
-      CreditLimit :'',
+      CreditPeriod :0,
+      CreditLimit :0,
+      Type :'Customer',
       AccountName :'',
       AccountNo :'',
   });
   this.btnStatus="Save";
-  this.getLedgerCode();
+  this.modalService.show('Info', 'Form has been reset.');
+    this.ngOnInit();
 }
-
 }

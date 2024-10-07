@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { InvoiceService } from '../../services/invoice.service';
-import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { InvoiceService } from 'src/app/services/invoice.service';
 
 @Component({
   selector: 'app-sales-invoice-list',
-  standalone: true,
-  imports: [CommonModule,ReactiveFormsModule,RouterOutlet],
   templateUrl: './sales-invoice-list.component.html',
-  styleUrl: './sales-invoice-list.component.css'
+  styleUrls: ['./sales-invoice-list.component.css']
 })
 export class SalesInvoiceListComponent implements OnInit {
   saleInvoiceForm: FormGroup;
@@ -70,14 +67,14 @@ export class SalesInvoiceListComponent implements OnInit {
 
 
   addNew(){
-    this.route.navigate(['/salesInvoice']);
+    this.route.navigate(['/account/salesInvoice']);
   }
 
 
   async edit(id: number) {
-    this.route.navigate(['/salesInvoice-edit', id]);
+    this.route.navigate(['/account/salesInvoice-edit', id]);
   }
   async view(id: number) {
-    this.route.navigate(['/salesInvoice/view', id]);
+    this.route.navigate(['/account/salesInvoice/view', id]);
   }
 }

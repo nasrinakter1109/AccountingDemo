@@ -1,18 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountLedgerView } from '../../models/account-ledger-view';
-import { AccountService } from '../../services/account.service';
-import { Router, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { AccountLedgerView } from 'src/app/models/account-ledger-view';
+import { AccountService } from 'src/app/services/account.service';
 
 @Component({
   selector: 'app-customer-list',
-  standalone: true,
-  imports: [RouterOutlet,
-    FormsModule,
-    CommonModule,],
   templateUrl: './customer-list.component.html',
-  styleUrl: './customer-list.component.css'
+  styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
 
@@ -38,11 +32,11 @@ export class CustomerListComponent implements OnInit {
  }
 
   addNew(){
-    this.route.navigate(['/customer']);
+    this.route.navigate(['/account/customer']);
   }
 
 
   async edit(id: number) {
-    this.route.navigate(['/customer-edit', id]);
+    this.route.navigate(['/account/customer-edit', id]);
   }
 }

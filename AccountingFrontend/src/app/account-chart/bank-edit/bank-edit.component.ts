@@ -1,20 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators,ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, Router,RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AccountService } from 'src/app/services/account.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-bank-edit',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './bank-edit.component.html',
-  styleUrl: './bank-edit.component.css'
+  styleUrls: ['./bank-edit.component.css']
 })
 export class BankEditComponent implements OnInit {
   id?: number;
   bankLedgerForm: FormGroup;
-  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router) {
+  constructor(private router: ActivatedRoute,private accountService:AccountService,private fb: FormBuilder,private route:Router,private modalService: ModalService) {
     this.bankLedgerForm = this.fb.group({
       LedgerId :[0],
       AccountGroupId :[28],
@@ -39,9 +37,8 @@ export class BankEditComponent implements OnInit {
         });
   }
   ngOnInit(): void {
-    // Retrieve the 'id' parameter and use the non-null assertion operator
     this.router.paramMap.subscribe(params => {
-      this.id = +params.get('id')!; // '!' asserts that id will not be null
+      this.id = +params.get('id')!;
       console.log('Supplier ID:', this.id);
     });
     this.edit(this.id!)
@@ -59,53 +56,56 @@ export class BankEditComponent implements OnInit {
 
   }
 
-   async onSubmit() {
+
+  async onSubmit() {
     this.bankLedgerForm.get('LedgerCode')?.enable();
-     if (this.bankLedgerForm.value.LedgerId>0) {
+     if (this.bankLedgerForm.value.LedgerId) {
        await this.accountService.updateAccount(this.bankLedgerForm.value).subscribe((data:any)=>{
         if(data.status){
-         // this.snackbar.open('Account updated successfully!', 'Close', { duration: 2000 });
-         alert("SuccessFully Updated!");
-         this.bankLedgerForm.get('LedgerCode')?.disable();
-         this.route.navigate(['/bank-list']);
-        }else{
-          alert(data.message)
+          this.modalService.show('Success', 'Form submitted successfully!');
           this.bankLedgerForm.get('LedgerCode')?.disable();
-        }
+          this.route.navigate(['/account/bank-list']);
+         }else{
+          this.modalService.show('Failed', 'Form submitted Failed!');
+           this.bankLedgerForm.get('LedgerCode')?.disable();
+         }
        },(err:any)=>{
         alert(err.error.message)
        });
 
      } else {
-      console.log(this.bankLedgerForm.value)
       if(this.bankLedgerForm.valid){
         await this.accountService.createAccount(this.bankLedgerForm.value).subscribe((data:any)=>{
           if(data.status){
-           // this.snackbar.open('Account created successfully!', 'Close', { duration: 2000 });
-           alert("SuccessFully Save!");
+            this.modalService.show('Success', 'Form submitted successfully!');
            this.bankLedgerForm.get('LedgerCode')?.disable();
-           this.route.navigate(['/bank-list']);
-          }else{
-            alert(data.message)
-            this.bankLedgerForm.get('LedgerCode')?.disable();
+           this.route.navigate(['/account/bank-list']);
 
+          }else{
+            this.modalService.show('Failed', 'Form submitted Failed!');
+            this.bankLedgerForm.get('LedgerCode')?.disable();
           }
          },(err:any)=>{
           alert(err.error.message)
          });
-      }
+      }else{
+        this.modalService.show('Error', 'Please fill out all required fields.');
+       }
      }
 
+
    }
+
    resetForm() {
     this.bankLedgerForm.reset({
       LedgerId :0,
+        AccountGroupId :28,
         LedgerName :'',
         LedgerCode :'',
         CompanyId :1,
         OpeningBalance :0,
-        IsDefault :0,
-        CrOrDr :'',
+        IsDefault :true,
+        CrOrDr :'Dr',
         Address :'',
         Phone :'',
         Email :'',
@@ -113,10 +113,13 @@ export class BankEditComponent implements OnInit {
         Country :'',
         City :'',
         TaxNo :'',
-        CreditPeriod :'',
-        CreditLimit :'',
+        CreditPeriod :0,
+        CreditLimit :0,
+        Type :'Accounts',
         AccountName :'',
         AccountNo :'',
     });
+    this.modalService.show('Info', 'Form has been reset.');
+      this.ngOnInit();
   }
 }

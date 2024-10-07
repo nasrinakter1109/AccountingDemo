@@ -25,6 +25,9 @@
           <select formControlName="AccountGroupId" class="form-control" required>
             <option *ngFor="let group of listGroup" [value]="group.AccountGroupId">{{ group.AccountGroupName }}</option>
           </select>
+          <!-- <ng-select [items]="listGroup" bindLabel="AccountGroupName" bindValue="AccountGroupId"
+          formControlName="AccountGroupId"  [searchable]="true" [clearable]="true">
+              </ng-select> -->
          </div>
         </div>
 

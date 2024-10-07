@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AppConfig } from '../app.config';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReportService {
 
-  private apiUrl = AppConfig.reportApiUrl;
+  private apiUrl = environment.reportApiUrl;
 
   constructor(private http: HttpClient) { }
 

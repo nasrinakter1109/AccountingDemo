@@ -1,13 +1,27 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ModalService } from './Shared/modal.service';
+import { ModalComponent } from './Shared/modal/modal.component';
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'AccountingFrontend';
+export class AppComponent implements OnInit , AfterViewInit {
+  @ViewChild(ModalComponent) modalComponent!: ModalComponent;
+  constructor(private modalService: ModalService) {}
+ ngAfterViewInit() {
+    this.modalService.setModal(this.modalComponent);
+  }
+  ngOnInit() {
+    setTimeout(() => {
+      this.modalService.setModal(this.modalComponent);
+    });
+  }
+
+  triggerModal() {
+    console.log("Trigger Modal")
+    this.modalService.show('Example Title', 'This is an example message!');
+  }
 }

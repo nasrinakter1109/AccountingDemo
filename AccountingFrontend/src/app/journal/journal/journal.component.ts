@@ -1,21 +1,17 @@
-import { JournalDetails } from './../../models/journal-details';
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { JournalMaster } from '../../models/journal-master';
-import { JournalService } from '../../services/journal.service';
-import { CommonModule } from '@angular/common';
-import { Router, RouterOutlet } from '@angular/router';
-import { AccountLedgerView } from '../../models/account-ledger-view';
-import { AccountService } from '../../services/account.service';
-import { AuthService } from '../../services/auth.service';
-
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountLedgerView } from 'src/app/models/account-ledger-view';
+import { JournalMaster } from 'src/app/models/journal-master';
+import { AccountService } from 'src/app/services/account.service';
+import { AuthService } from 'src/app/services/auth.service';
+import { JournalService } from 'src/app/services/journal.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-journal',
-  standalone: true,
-  imports: [ReactiveFormsModule,CommonModule,RouterOutlet],
   templateUrl: './journal.component.html',
-  styleUrl: './journal.component.css'
+  styleUrls: ['./journal.component.css']
 })
 export class JournalComponent implements OnInit{
   journalForm:FormGroup;
@@ -28,7 +24,7 @@ export class JournalComponent implements OnInit{
    btnStatus:string="Save";
    isSubmit:boolean=false;
    isSaveClick:boolean=false;
-  constructor(private fb:FormBuilder,private journalService:JournalService,private accountService:AccountService,private route:Router,private authService: AuthService){
+  constructor(private fb:FormBuilder,private journalService:JournalService,private accountService:AccountService,private route:Router,private authService: AuthService,private modalService: ModalService){
     const userData = this.authService.getUserData();
     this.journalForm=this.fb.group({
       JournalMasterId : [0],
@@ -38,7 +34,7 @@ export class JournalComponent implements OnInit{
       Date : [,Validators.required],
       Amount : [0],
       Narration : [''],
-      UserId : [],
+      UserId : [userData?.UserName],
       VoucherTypeId : [5],
       FinancialYearId : [1],
       CompanyId : [1],
@@ -124,7 +120,8 @@ export class JournalComponent implements OnInit{
  saveTransaction(){
   let journalEntry=new JournalMaster();
   if(this.journalForm.get('Amount')!.value == this.totalCredit){
-    if(this.journalForm.invalid)  {alert("Please Fill All the required field"); return;}
+    if(this.journalForm.invalid)  {
+      this.modalService.show('Warnning', 'Please Fill All the required field!');return;}
     journalEntry=this.journalForm.value;
     journalEntry.Date = new Date(journalEntry.Date).toISOString();
     var filter=this._journalForm.value.filter((item:any)=>item.LedgerId !=null && item.Debit >0 || item.Credit >0 );
@@ -133,23 +130,22 @@ export class JournalComponent implements OnInit{
       this.journalForm.get('VoucherNo')?.enable();
    this.journalService.saveJournalEntry(journalEntry).subscribe((response:any)=>{
       if(response.status){
-        alert(response.message);
+        this.modalService.show('Success', 'Form submitted successfully!');;
         this.journalForm.get('VoucherNo')?.disable();
-        this.route.navigate(['/journal-list']);
+        this.route.navigate(['/account/journal-list']);
       }else{
-        alert(response.message);
+        this.modalService.show('Failed', 'Form submition Failed!');;
         this.journalForm.get('VoucherNo')?.disable();
         this.route.navigate(['/journal-list']);
         this.isSaveClick=false
       }
    },(error:any)=>{
-    alert(error.error.message);
-
+    this.modalService.show('Error', 'Something went wrong!');
     this.isSubmit=false;
     this.isSaveClick=false;
   } );
   }else{
-  alert("Please fill Account Head And Amount");
+    this.modalService.show('Warnning', 'Please fill Account Head And Amount!');
 
   this.isSubmit=false;
   this.isSaveClick=false;
@@ -162,7 +158,8 @@ export class JournalComponent implements OnInit{
 }else{
   this.isSubmit=false;
   this.isSaveClick=false;
-    alert("Total Debit value and Total Credit is not same value");
+  this.modalService.show('Warnning', 'Total Debit value and Total Credit is not same value!');
+
   }
 
 }

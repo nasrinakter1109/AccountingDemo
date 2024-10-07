@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Privilege } from '../models/privilege';
-import { AppConfig } from '../app.config';
-
 @Injectable({
   providedIn: 'root'
 })
 export class PrivilegeService {
 
-  private apiUrl = AppConfig.apiUrl;
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 

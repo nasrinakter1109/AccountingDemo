@@ -1,63 +1,66 @@
 
 <div class="card mt-5 m-5">
 
-    <div >
-      <h4 class="card-header text-center">Journal Voucher</h4>  </div>
+  <div >
+    <h4 class="card-header text-center">Journal Voucher</h4>  </div>
 
-  <div class="card">
-    <div class="card-body">
+<div class="card">
+  <div class="card-body">
 
-    <div>
-      <button class="btn btn-success p-2 m-2" (click)="addNew()">Add Voucher</button>
-    </div>
+  <div>
+    <button class="btn btn-success p-2 m-2" (click)="addNew()">Add Voucher</button>
+  </div>
 
 
-    <div class="row">
-        <div class="card ">
-          <div class="card-body p-0">
-            <div class="data-table m-0 p-0">
-              <table class="table text-center mb-0 table-bordered">
-                <thead>
-                  <tr>
-                    <th style="width:20%">Date</th>
-                    <th style="width:20%">Voucher No </th>
-                    <th style="width:10%">Amount</th>
-                    <th style="width:20%">Narration</th>
-                    <th style="width:20%">Status</th>
-                    <th style="width:10%">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let item of listModel; let i = index">
+  <div class="row">
+      <div class="card ">
+        <div class="card-body p-0">
+          <div class="data-table m-0 p-0">
+            <table class="table text-center mb-0 table-bordered">
+              <thead>
+                <tr>
+                  <th style="width:20%">Date</th>
+                  <th style="width:20%">Voucher No </th>
+                  <th style="width:10%">Amount</th>
+                  <th style="width:20%">Narration</th>
+                  <th style="width:20%">Status</th>
+                  <th style="width:10%">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listModel; let i = index">
 
-                    <td style="width:20%">{{ item.Date | date:'yyyy-MM-dd' }}</td>
-                    <td style="width:20%">{{ item.VoucherNo }}</td>
-                    <td style="width:10%">{{ item.Amount }}</td>
-                    <td style="width:20%">{{ item.Narration }}</td>
-                    <td style="width:20%">
-                      <button class="btn btn-warning btn-sm " *ngIf="item.Status=='Draft'" >
-                        {{item.Status}}
-                      </button>
-                      <button class="btn btn-warning btn-sm mt-1" *ngIf="item.Status=='Draft'">
-                        <span class="fas fa-edit ">Approval Pending</span>
-                      </button>
-                      <button class="btn btn-success btn-sm" *ngIf="item.Status !='Draft'">
-                        {{item.Status}}
-                      </button>
-                    </td>
-                    <td style="width:20%">
-                      <button class="btn btn-primary btn-sm" (click)="edit(item.JournalMasterId)">
-                        <span class="fas fa-edit">Edit</span>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                  <td style="width:20%">{{ item.Date | date:'yyyy-MM-dd' }}</td>
+                  <td style="width:20%">{{ item.VoucherNo }}</td>
+                  <td style="width:10%">{{ item.Amount }}</td>
+                  <td style="width:20%">{{ item.Narration }}</td>
+                  <td style="width:20%">
+                    <button class="btn btn-warning btn-sm " *ngIf="item.Status=='Draft'" >
+                      {{item.Status}}
+                    </button>
+                    <button class="btn btn-warning btn-sm mt-1" *ngIf="item.Status=='Draft'">
+                      <span class="fas fa-edit ">Approval Pending</span>
+                    </button>
+                    <button class="btn btn-success btn-sm" *ngIf="item.Status !='Draft'">
+                      {{item.Status}}
+                    </button>
+                  </td>
+                  <td style="width:20%">
+                    <button class="btn btn-info btn-sm" (click)="view(item.JournalMasterId)">
+                      <span class="fas fa-edit">View for Approved</span>
+                    </button>
+                    <!-- <button class="btn btn-primary btn-sm" (click)="edit(item.JournalMasterId)">
+                      <span class="fas fa-edit">Edit</span>
+                    </button> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
+</div>
 

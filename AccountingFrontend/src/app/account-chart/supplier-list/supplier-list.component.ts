@@ -1,17 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountLedgerView } from '../../models/account-ledger-view';
-import { AccountService } from '../../services/account.service';
-import { Router, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AccountLedgerView } from 'src/app/models/account-ledger-view';
+import { AccountService } from 'src/app/services/account.service';
+
 @Component({
   selector: 'app-supplier-list',
-  standalone: true,
-  imports: [RouterOutlet,
-    FormsModule,
-    CommonModule,],
   templateUrl: './supplier-list.component.html',
-  styleUrl: './supplier-list.component.css'
+  styleUrls: ['./supplier-list.component.css']
 })
 export class SupplierListComponent implements OnInit {
 
@@ -23,7 +18,6 @@ export class SupplierListComponent implements OnInit {
   ngOnInit() {
    this.loadData();
   }
-
   async loadData() {
     await this.accountService.getAllAccounts(22).subscribe((data:any)=>{
      if(data.status){
@@ -34,14 +28,10 @@ export class SupplierListComponent implements OnInit {
      }
     });
  }
-
-
   addNew(){
-    this.route.navigate(['/supplier']);
+    this.route.navigate(['/account/supplier']);
   }
-
-
   async edit(id: number) {
-    this.route.navigate(['/supplier-edit', id]);
+    this.route.navigate(['/account/supplier-edit', id]);
   }
 }

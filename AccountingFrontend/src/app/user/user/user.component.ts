@@ -1,19 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../services/user.service';
-import { UserModel } from '../../models/user';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { RoleModel } from '../../models/role';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RoleModel } from 'src/app/models/role';
+import { UserModel } from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
-  imports: [ReactiveFormsModule,RouterOutlet,CommonModule],
   templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  styleUrls: ['./user.component.css']
 })
-export class UserComponent  implements OnInit {
+export class UserComponent implements OnInit {
   userForm: FormGroup;
   btnStatus:string="Save";
   isSubmitted:boolean=false;
@@ -21,7 +18,7 @@ export class UserComponent  implements OnInit {
 
   users: UserModel[] = [];
 
-  constructor(private userService: UserService, private fb: FormBuilder) {
+  constructor(private userService: UserService, private fb: FormBuilder,private modalService: ModalService) {
 
     this.userForm = this.fb.group({
       UserId: [0],
@@ -57,22 +54,23 @@ export class UserComponent  implements OnInit {
   onSubmit() {
     this.isSubmitted=true;
     console.log({formValue:this.userForm.value})
-    // if(this.userForm.invalid){
-    //   alert("Please fill the required field")
-    //   return;
-    // }
-    const userData = this.userForm.value;
-    this.userService.saveOrUpdateUser(userData).subscribe((response:any)=>{
-      if(response.status){
-        alert("Success!")
-        this.resetForm();
-        this.refreshUserList();
-      }else{
-        alert("Failed!")
-      }
-    },(err:any)=>{
-      alert("Please fill the required field!")
-    })
+    if(this.userForm.valid){
+      const userData = this.userForm.value;
+      this.userService.saveOrUpdateUser(userData).subscribe((response:any)=>{
+        if(response.status){
+          this.modalService.show('Success', 'Form submitted successfully!');
+          //this.resetForm();
+          this.refreshUserList();
+        }else{
+          this.modalService.show('Failed', 'Form submitted Failed!');
+        }
+      },(err:any)=>{
+        alert("Please fill the required field!")
+      })
+    }else{
+      this.modalService.show('Error', 'Please fill out all required fields.');
+    }
+
   }
 
   refreshUserList() {
@@ -109,5 +107,6 @@ export class UserComponent  implements OnInit {
       Active: true,
     });
     this.btnStatus="Save";
+    this.modalService.show('Info', 'Form has been reset.');
   }
 }

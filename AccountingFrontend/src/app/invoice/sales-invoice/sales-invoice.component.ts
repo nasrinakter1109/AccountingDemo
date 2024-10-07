@@ -1,22 +1,18 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { AbstractControl, FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterOutlet } from '@angular/router';
-import { AccountService } from '../../services/account.service';
-import { InvoiceService } from '../../services/invoice.service';
-import { SettingsService } from '../../services/settings.service';
-import { NgSelectModule } from '@ng-select/ng-select';
-import { SalesMaster } from '../../models/sales-master';
-import { SalesDetails } from '../../models/sales-details';
-import { catchError, of, retry } from 'rxjs';
-import { AuthService } from '../../services/auth.service';
+import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { SalesDetails } from 'src/app/models/sales-details';
+import { SalesMaster } from 'src/app/models/sales-master';
+import { AccountService } from 'src/app/services/account.service';
+import { AuthService } from 'src/app/services/auth.service';
+import { InvoiceService } from 'src/app/services/invoice.service';
+import { SettingsService } from 'src/app/services/settings.service';
+import { ModalService } from 'src/app/Shared/modal.service';
 
 @Component({
   selector: 'app-sales-invoice',
-  standalone: true,
-  imports: [CommonModule,RouterOutlet,ReactiveFormsModule,NgSelectModule,FormsModule ],
   templateUrl: './sales-invoice.component.html',
-  styleUrl: './sales-invoice.component.css'
+  styleUrls: ['./sales-invoice.component.css']
 })
 export class SalesInvoiceComponent implements OnInit {
   invoiceForm: FormGroup;
@@ -25,7 +21,7 @@ export class SalesInvoiceComponent implements OnInit {
   listLedger :any[]=[];
   listProduct:any = [];
   userData:any;
-  constructor(private fb: FormBuilder,private route:Router,private accountService:AccountService,private invoiceService:InvoiceService,private settingsService:SettingsService,private authService: AuthService) {
+  constructor(private fb: FormBuilder,private route:Router,private accountService:AccountService,private invoiceService:InvoiceService,private settingsService:SettingsService,private authService: AuthService,private modalService: ModalService) {
     this.userData = this.authService.getUserData();
 
     this.invoiceForm = this.fb.group({
@@ -90,16 +86,19 @@ getProductList() {
     return this.invoiceForm.get('items') as FormArray;
   }
   onChange(event: any): void {
-    console.log('Selected product:', event);
-
+      const productId= event.target.value;
+      console.log('Selected product:',productId);
     // Ensure event contains valid product data
-    if (event && event.ProductId) {
+    if (productId) {
       if (this.items && this.items.controls) {
-        let filterArray = this.items.controls.filter((i: any) => i.value.ProductId === event.ProductId);
+        const event = this.listProduct.find((product:any) => product.ProductId == productId);
+        console.log({event})
+        let filterArray = this.items.controls.filter((i: any) => i.value.ProductId == event.ProductId);
         console.log({ filterArray });
 
         if (filterArray.length > 0) {
-          alert("Product Already Exists");
+          this.modalService.show('Warnning', 'Product already exist!');
+
         } else {
           this.items.push(this.fb.group({
             SalesDetailsId: [0],
@@ -126,10 +125,11 @@ getProductList() {
           this.calculateTotal();
         }
       } else {
-        console.error('Form controls are not properly initialized.');
+        this.modalService.show('Error', 'Something went wrong!');
       }
     } else {
-      console.error('Invalid product data:', event);
+      this.modalService.show('Error', 'Invalid product data!');
+
     }
   }
 
@@ -262,7 +262,11 @@ getProductList() {
       items: this.fb.array([])
     });
   }
-
+  onLedgerChange(event: any) {
+    const selectedLedgerId = event.target.value;
+    this.invoiceForm.get('LedgerId')!.setValue(selectedLedgerId);
+    console.log('Selected Ledger ID:', selectedLedgerId);
+  }
   saveInvoice() {
     let master = new SalesMaster();
     master = {
@@ -318,11 +322,13 @@ getProductList() {
     this.invoiceService.saveInvoice(master).subscribe(
       (res: any) => {
         console.log({res})
-        alert(res.message);
-        this.route.navigate(['/supplier-list']);
+        this.modalService.show('Success', 'Form submitted successfully!');
+
+        this.route.navigate(['/account/salesInvoice-list']);
       },
       (err: any) => {
-        alert(err.error.message);
+        this.modalService.show('Error', 'Someting went wrong!');
+
       }
     );
   }

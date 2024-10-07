@@ -5,7 +5,7 @@
     <h4 class="card-header text-center ">
       Supplier
     </h4>
-  
+
   <div class="card-body">
   <div class="content">
     <form [formGroup]="supplierLedgerForm" (ngSubmit)="onSubmit()">
@@ -19,13 +19,13 @@
             </div>
            </div>
           </div>
-  
-  
+
+
           <div class="form-group row">
             <label class="col-form-label col-md-3">Code</label>
            <div class="col-md-9 ">
             <input type="number" class="form-control" formControlName="LedgerCode"  required >
-  
+
           </div>
           </div>
           <div class="form-group row">
@@ -34,7 +34,7 @@
             <input type="text" class="form-control" formControlName="Address" >
            </div>
           </div>
-  
+
           <div class="form-group row">
             <label class="col-form-label col-md-3">TaxNo</label>
            <div class="col-md-9">
@@ -77,34 +77,34 @@
             <input type="number" class="form-control" formControlName="CreditLimit" >
            </div>
           </div>
-  
+
           <div class="form-group row">
             <label class="col-form-label col-md-6">Opening Balance</label>
            <div class="col-md-6">
             <input type="number" class="form-control" formControlName="OpeningBalance" >
            </div>
           </div>
-  
-  
-  
-  
+
+
+
+
           <div class="form-group row">
-  
+
               <select formControlName="CrOrDr" class="form-control" >
               <option value="Dr">Dr</option>
               <option value="Cr">Cr</option>
             </select>
-  
+
           </div>
-  
+
         <div class="col-lg-12 demo-inline-spacing center" style="margin: 0 auto; ">
           <button type="submit" class="btn btn-primary float-right mx-1">Update</button>
           <button type="button" class="btn btn-danger float-right mx-1" (click)="resetForm()">Cancel</button>
         </div>
       </div>
     </form>
-  
-  
+
+
   </div>
   </div>
   </div>
